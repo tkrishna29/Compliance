@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element attributes="hasLabels=true" extends="task" label="IntegrityConcern" max_length="40" name="x_grs_compliance_integrityconcern" sizeclass="55" type="collection">
+        <element label="Accused Company" max_length="100" name="accused_company" read_only="true" type="string"/>
+        <element label="Accused Company Other" max_length="100" name="accused_company_other" type="string"/>
+        <element label="Accused Name(s)" max_length="1000" name="accused_employee" read_only="true" type="string"/>
+        <element label="AII Reference" max_length="40" name="aii_reference" type="string"/>
+        <element label="AIR Meeting Reference#" max_length="40" name="air_reference" read_only="true" type="string"/>
+        <element label="AIR violated Policy" max_length="1000" name="air_violated_policy" read_only="true" type="string"/>
+        <element choice="1" label="Assigned Investigator" max_length="32" name="assigned_investigator" reference="sys_user" reference_qual="roles=x_grs_compliance.Investigator^EQ" reference_qual_condition="roles=x_grs_compliance.Investigator^EQ" type="reference">
+            <choice/>
+        </element>
+        <element label="Closure Details" max_length="4000" name="closure_details" type="string_full_utf8"/>
+        <element label="Description of Integrity Concern (Detailed)" max_length="3000" name="committee_integrity_concern_desc" type="string_full_utf8"/>
+        <element label="Complaint" max_length="100" name="complaint" type="string"/>
+        <element choice="1" label="Complaint Level Indicator" mandatory="true" max_length="40" name="complaint_level" type="choice">
+            <choice>
+                <element label="1A (2 Weeks)" sequence="0" value="1A (2 Weeks)"/>
+                <element label="1B (2 Weeks)" sequence="1" value="1B (2 Weeks)"/>
+                <element label="1C (2 Weeks)" sequence="2" value="1C (2 Weeks)"/>
+                <element label="1D (2 Weeks)" sequence="3" value="1D (2 Weeks)"/>
+                <element label="2A (3 Weeks)" sequence="4" value="2A (3 Weeks)"/>
+                <element label="2B (3 Weeks)" sequence="5" value="2B (3 Weeks)"/>
+                <element label="2C (4 Weeks)" sequence="6" value="2C (4 Weeks)"/>
+                <element label="2D (4 Weeks)" sequence="7" value="2D (4 Weeks)"/>
+                <element label="Deferred to GE" sequence="8" value="Deferred to GE"/>
+                <element label="Employee Relations Issue" sequence="9" value="Employee Relations Issue"/>
+                <element label="EHS/Safety Issue" sequence="10" value="EHS/Safety Issue"/>
+                <element label="Decline" sequence="11" value="Decline"/>
+                <element label="I" sequence="12" value="I"/>
+                <element label="NI" sequence="13" value="NI"/>
+                <element label="ER" sequence="14" value="ER"/>
+            </choice>
+        </element>
+        <element label="Compliance Notes" max_length="4000" name="compliance_notes" spell_check="true" type="string_full_utf8"/>
+        <element label="Compliance Policy" max_length="100" name="compliance_policy" type="string"/>
+        <element label="Description of Concern:" max_length="4500" name="concern_description" read_only="true" type="string_full_utf8"/>
+        <element label="Incident details" max_length="3000" name="concern_details" type="string_full_utf8"/>
+        <element choice="1" label="Individual Completing Form" max_length="50" name="concern_filler_type" read_only="true" type="string">
+            <choice>
+                <element label="Employee" sequence="0" value="Employee"/>
+                <element label="HR" sequence="0" value="HR"/>
+                <element label="Human Resources" sequence="1" value="Human Resources"/>
+                <element label="Other" sequence="2" value="Other"/>
+            </choice>
+        </element>
+        <element choice="1" label="Source" max_length="40" name="concern_raised_through" read_only="true" type="choice">
+            <choice>
+                <element label="INTEGRITY" sequence="0" value="INTEGRITY"/>
+                <element label="Annual Integrity Review" sequence="1" value="Annual Integrity Review"/>
+            </choice>
+        </element>
+        <element choice="1" label="Concern Status" max_length="100" name="concern_status" read_only="true" type="string">
+            <choice>
+                <element label="New" sequence="1" value="New"/>
+                <element label="Cancelled" sequence="2" value="Cancelled"/>
+                <element label="Reassign Investigator" sequence="3" value="Reassign Investigator"/>
+                <element label="Investigation In Progress" sequence="4" value="Investigation In Progress"/>
+                <element label="GIL Review" sequence="5" value="GIL Review"/>
+                <element label="Additional Investigation Required" sequence="6" value="Additional Investigation Required"/>
+                <element label="Remediation" sequence="7" value="Remediation"/>
+                <element label="Complete" sequence="8" value="Complete"/>
+                <element label="Additional Closure Details" sequence="9" value="Additional Closure Details"/>
+                <element label="Closed" sequence="10" value="Closed"/>
+            </choice>
+        </element>
+        <element choice="1" label="Concern Type" mandatory="true" max_length="2000" name="concern_type" type="choice">
+            <choice>
+                <element label="Conflict of interest" sequence="0" value="Conflict of interest"/>
+                <element label="Controllership/EHS" sequence="0" value="Controllership/EHS"/>
+                <element label="Drug/Alcohol" sequence="0" value="Drug/Alcohol"/>
+                <element label="Fraud/EHS" sequence="0" value="Fraud/EHS"/>
+                <element label="Gifts, Gratuities &amp; Business Courtesies" sequence="0" value="Gifts, Gratuities &amp; Business Courtesies"/>
+                <element label="Harassment, Retailiation" sequence="0" value="Harassment, Retailiation"/>
+                <element label="Theft" sequence="0" value="Theft"/>
+                <element label="Violence" sequence="0" value="Violence"/>
+                <element label="Discrimination" sequence="1" value="Discrimination"/>
+                <element label="Drug/Alcohol use" sequence="2" value="Drug/Alcohol use"/>
+                <element label="Fraud" sequence="3" value="Fraud"/>
+                <element label="Harassment" sequence="4" value="Harassment"/>
+                <element label="Improper payment" sequence="5" value="Improper payment"/>
+                <element label="Retaliation" sequence="6" value="Retaliation"/>
+                <element label="Violence in the workspace" sequence="7" value="Violence in the workspace"/>
+                <element label="EHS/Safety" sequence="8" value="EHS/Safety"/>
+                <element label="Other" sequence="9" value="Other"/>
+            </choice>
+        </element>
+        <element label="Concern Type - Other" max_length="40" name="concern_type_other" type="string"/>
+        <element label="Witnesses Names" max_length="200" name="concern_witnesses" read_only="true" type="string"/>
+        <element label="Country of Incident" max_length="40" name="country_of_incident" type="string"/>
+        <element label="Date Closure Activities Finalized" max_length="40" name="date_closed" type="glide_date"/>
+        <element label="# of Days to Resolve Complaint" max_length="40" name="days_to_resolve_complaint" type="integer"/>
+        <element choice="1" label="Disposition" mandatory="true" max_length="40" name="disposition" type="choice">
+            <choice>
+                <element label="N/A" value="n/a"/>
+                <element label="Substantiated" value="substantiated"/>
+                <element label="Unsubstantiated" value="unsubstantiated"/>
+            </choice>
+        </element>
+        <element label="Findings:" max_length="1000" name="findings" type="string_full_utf8"/>
+        <element label="Findings Section" max_length="255" name="findings_section" type="string_full_utf8"/>
+        <element choice="1" label="Function" max_length="40" name="function" type="choice">
+            <choice>
+                <element label="Administrative" value="Administrative"/>
+                <element label="Communications" value="Communications"/>
+                <element label="EHS" value="EHS"/>
+                <element label="Field EE" value="Field EE"/>
+                <element label="Finance" value="Finance"/>
+                <element label="HR" value="HR"/>
+                <element label="IT" value="IT"/>
+                <element label="Legal/Immigration" value="Legal/Immigration"/>
+                <element label="Operations" value="Operations"/>
+                <element label="Operations Excellence" value="Operations Excellence"/>
+                <element label="Quality" value="Quality"/>
+                <element label="Region Operations" value="Region Operations"/>
+                <element label="Service Lines" value="Service Lines"/>
+            </choice>
+        </element>
+        <element label="Mention Reason if concern is ignored" max_length="5000" name="ignored_reason" type="string_full_utf8"/>
+        <element label="Incident date" max_length="50" name="incident_date" type="glide_date"/>
+        <element label="Incident Location" max_length="100" name="incident_location" read_only="true" type="string"/>
+        <element label="Incident Dates" max_length="200" name="incident_relvnt_dates" read_only="true" type="string_full_utf8"/>
+        <element label="Complainant best time to reach" max_length="100" name="individual_best_contact_time" read_only="true" type="string"/>
+        <element choice="1" label="Complainant Company" max_length="100" name="individual_company" read_only="true" type="string">
+            <choice>
+                <element label="Granite" sequence="0" value="Granite"/>
+                <element label="Other" sequence="1" value="Other"/>
+            </choice>
+        </element>
+        <element label="Complainant Company Other" max_length="40" name="individual_company_other" type="string"/>
+        <element label="individual complained to" max_length="100" name="individual_complained_to" type="string"/>
+        <element label="Complainant Email" max_length="100" name="individual_email" read_only="true" type="string"/>
+        <element label="individual hire date" max_length="50" name="individual_hire_date" type="glide_date"/>
+        <element choice="1" label="individual home office" max_length="50" name="individual_home_office" type="choice">
+            <choice>
+                <element label="GMP" sequence="0" value="GMP"/>
+                <element label="GSI Staff" sequence="1" value="GSI Staff"/>
+                <element label="GSII Algeria" sequence="2" value="GSII Algeria"/>
+                <element label="GSII Angola" sequence="3" value="GSII Angola"/>
+                <element label="GSII Argentina" sequence="4" value="GSII Argentina"/>
+                <element label="GSII Australia" sequence="5" value="GSII Australia"/>
+                <element label="GSII Bahrain" sequence="6" value="GSII Bahrain"/>
+                <element label="GSII US" sequence="7" value="GSII US"/>
+            </choice>
+        </element>
+        <element label="Individual job owner" max_length="50" name="individual_job_owner" type="string"/>
+        <element label="individual job title" max_length="50" name="individual_job_title" type="string"/>
+        <element label="Complainant Name" max_length="100" name="individual_name" read_only="true" type="string"/>
+        <element label="Complainant Phone" max_length="50" name="individual_phone" read_only="true" type="string"/>
+        <element label="Date Investigation Concluded" max_length="40" name="investigation_end_date" type="glide_date"/>
+        <element label="Investigation Assigned Date" max_length="40" name="investigation_start_date" read_only="true" type="glide_date"/>
+        <element hint="Describe summary of findings with supporting interview comments (note any discrepancies) here" label="Concerns Investigation Summary:" max_length="10000" name="investigation_summary" type="string_full_utf8"/>
+        <element label="Investigator" max_length="32" name="investigator" reference="sys_user" type="reference"/>
+        <element label="Investigator Compliance Notes" max_length="4000" name="investigator_compliance_notes" type="string_full_utf8"/>
+        <element choice="1" label="Issue Addressed?" max_length="40" name="issue_addressed" read_only="true" type="choice">
+            <choice>
+                <element label="No" value="No"/>
+                <element label="Yes" value="Yes"/>
+            </choice>
+        </element>
+        <element hint="Summary of findings with supporting interview comments (note any discrepancies)" label="Summary of Findings:" mandatory="true" max_length="6000" name="list_concerns" spell_check="true" type="string_full_utf8"/>
+        <element label="Meeting HR Representative" max_length="32" name="meeting_hr_representative" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Meeting Organizer Name" max_length="32" name="meeting_organizer_name" read_only="true" reference="sys_user" type="reference"/>
+        <element label="Next Committee Review Date" max_length="40" name="next_committee_review_date" type="glide_date"/>
+        <element label="Originator Email" max_length="100" name="orgntr_email" type="string"/>
+        <element label="Other Policies:" max_length="40" name="other_integrity_policy" read_only="true" type="string"/>
+        <element choice="1" label="Outcome" mandatory="true" max_length="20" name="outcome" type="choice">
+            <choice>
+                <element label="Substantiated" value="Substantiated"/>
+                <element label="Unsubstantiated" value="Unsubstantiated"/>
+            </choice>
+        </element>
+        <element hint="List all parties interviewed during investigation" label="Parties Interviewed:" max_length="500" name="parties_interviewed" type="string_full_utf8"/>
+        <element choice="1" label="Policy" max_length="40" name="policy" type="choice">
+            <choice>
+                <element label="Improper Payments" value="Improper Payments"/>
+                <element label="Insider Trading and Stock Tipping" value="Insider Trading and Stock Tipping"/>
+                <element label="Intellectual Property" value="Intellectual Property"/>
+                <element label="International Trade Controls" value="International Trade Controls"/>
+                <element label="Money Laundering Prevention" value="Money Laundering Prevention"/>
+                <element label="Other" value="Other"/>
+                <element label="Other Corporate Policy" value="Other Corporate Policy"/>
+                <element label="Privacy" value="Privacy"/>
+                <element label="Regulatory Excellence" value="Regulatory Excellence"/>
+                <element label="Security and Crisis Management" value="Security and Crisis Management"/>
+                <element label="Supplier Relationships" value="Supplier Relationships"/>
+                <element label="Working with Governments" value="Working with Governments"/>
+                <element label="Complying with Competition Laws" sequence="1" value="Complying with Competition Laws"/>
+                <element label="Conflicts of Interest" sequence="2" value="Conflicts of Interest"/>
+                <element label="Controllership" sequence="3" value="Controllership"/>
+                <element label="Environment" sequence="4" value="Environment"/>
+                <element label="Health and Safety" sequence="5" value="Health and Safety"/>
+                <element label="Fair Employment Practices" sequence="6" value="Fair Employment Practices"/>
+            </choice>
+        </element>
+        <element hint="Describe summary of findings with supporting interview comments (note any discrepancies) here" label="Policy Findings" max_length="2000" name="policy_findings" type="string_full_utf8"/>
+        <element hint="Region Approval, confirm name and date of Region/Function GM and Region HRM approvals for proposed remediation" label="Remediation Approvals:" max_length="5000" name="region_approval_remediations" spell_check="true" type="string_full_utf8"/>
+        <element choice="1" label="Region" mandatory="true" max_length="40" name="region_function" type="choice">
+            <choice>
+                <element label="EU" value="EU"/>
+                <element label="AIM" sequence="0" value="AIM"/>
+                <element label="APAC" sequence="1" value="APAC"/>
+                <element label="Corporate Staff" sequence="2" value="Corporate Staff"/>
+                <element label="LATAM" sequence="4" value="LATAM"/>
+                <element label="NAM" sequence="5" value="NAM"/>
+            </choice>
+        </element>
+        <element choice="1" choice_field="violated_policies" choice_table="x_grs_compliance_integrityconcern" label="Related Policies (Click Lock to select policy)" max_length="40" name="related_policies" type="glide_list">
+            <choice>
+                <element label="Complying with Competition Laws" sequence="0" value="Complying with Competition Laws"/>
+                <element label="Conflicts of Interest" sequence="1" value="Conflicts of Interest"/>
+                <element label="Controllership" sequence="2" value="Controllership"/>
+                <element label="Environment, Health and Safety" sequence="3" value="env_health_safety"/>
+                <element label="Fair Employment Practices" sequence="4" value="Fair Employment Practices"/>
+                <element label="Improper Payments" sequence="5" value="Improper Payments"/>
+                <element label="Insider Trading and Stock Tipping" sequence="6" value="Insider Trading and Stock Tipping"/>
+                <element label="Intellectual Property" sequence="7" value="Intellectual Property"/>
+                <element label="International Trade Controls" sequence="8" value="International Trade Controls"/>
+                <element label="Money Laundering Prevention" sequence="9" value="Money Laundering Prevention"/>
+                <element label="Other Policy" sequence="10" value="Other Policy"/>
+                <element label="Privacy" sequence="11" value="Privacy"/>
+                <element label="Security and Crisis Management" sequence="12" value="Security and Crisis Management"/>
+                <element label="Supplier Relationships" sequence="13" value="Supplier Relationships"/>
+                <element label="Working with Governments" sequence="14" value="Working with Governments"/>
+                <element label="Regulatory Excellence" sequence="15" value="Regulatory Excellence"/>
+            </choice>
+        </element>
+        <element label="Related Policy-Other" max_length="40" name="related_policies_other" type="string"/>
+        <element hint="Detail proposed remediation actions including those to systems, processes and individuals" label="Remediation Actions" max_length="5000" name="remediation_actions" spell_check="true" type="string_full_utf8"/>
+        <element label="Response Description" max_length="2000" name="response_description" read_only="true" type="string_full_utf8"/>
+        <element hint="Summarize related policy language and specific violation(s)" label="Policy Detail:" max_length="5000" name="summarize_violations" spell_check="true" type="string_full_utf8"/>
+        <element label="Summary of Concern" max_length="1000" name="summary_concern" type="string_full_utf8"/>
+        <element label="Taskassign" max_length="32" name="taskassign" reference="sys_user" type="reference"/>
+        <element choice="1" label="Violated Policies:" max_length="3000" name="violated_policies" type="glide_list">
+            <choice>
+                <element label="Complying with Competition Laws" sequence="1" value="Complying with Competition Laws"/>
+                <element label="Conflicts of Interest" sequence="2" value="Conflicts of Interest"/>
+                <element label="Controllership" sequence="3" value="Controllership"/>
+                <element label="Environment, Health and Safety" sequence="4" value="env_health_safety"/>
+                <element label="Fair Employment Practices" sequence="6" value="Fair Employment Practices"/>
+                <element label="Improper Payments" sequence="7" value="Improper Payments"/>
+                <element label="Insider Trading and Stock Tipping" sequence="8" value="Insider Trading and Stock Tipping"/>
+                <element label="Intellectual Property" sequence="9" value="Intellectual Property"/>
+                <element label="International Trade Controls" sequence="10" value="International Trade Controls"/>
+                <element label="Money Laundering Prevention" sequence="11" value="Money Laundering Prevention"/>
+                <element label="Other Policy" sequence="12" value="Other Policy"/>
+                <element label="Privacy" sequence="13" value="Privacy"/>
+                <element label="Security and Crisis Management" sequence="14" value="Security and Crisis Management"/>
+                <element label="Supplier Relationships" sequence="15" value="Supplier Relationships"/>
+                <element label="Working with Governments" sequence="16" value="Working with Governments"/>
+                <element label="Regulatory Excellence" sequence="17" value="Regulatory Excellence"/>
+            </choice>
+        </element>
+        <element choice="3" label="workflow stage" max_length="80" name="workflow_stage" type="workflow">
+            <choice>
+                <element label="New" sequence="100" value="New"/>
+                <element label="Cancelled" sequence="200" value="Cancelled"/>
+                <element label="Investigation In Progress" sequence="300" value="Investigation In Progress"/>
+                <element label="Reassign Investigator" sequence="350" value="Reassign Investigator"/>
+                <element label="GIL Review" sequence="400" value="GIL Review"/>
+                <element label="Additional Investigation Required" sequence="500" value="Additional Investigation Required"/>
+                <element label="Remediation" sequence="600" value="Remediation"/>
+                <element label="Closed" sequence="700" value="Closed"/>
+                <element label="Additional Closure Details" sequence="750" value="Additional Closure Details"/>
+                <element label="Complete" sequence="800" value="Complete"/>
+            </choice>
+        </element>
+    </element>
+</database>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>mid-server</category>
+        <content><![CDATA[    <h1 class="title topictitle1">MID Server capabilities</h1>        <div class="body taskbody">        <div class="section context"><span class="ph">MID Server capabilities define the specific functions of a MID      Server within an IP address range.</span><p class="p">At least one capability is required for each MID Server used        by Orchestration. The base functionality enables an administrator to select specific        capabilities for the probes launched by each MID Server. You can assign multiple MID Servers        to the same IP address range and give them different capabilities, or assign a MID Server        with specific capabilities to more than one IP address range. When Orchestration initiates a        Workflow activity, Orchestration uses the IP address of the target machine to locate the MID        Server assigned to that network segment that has the necessary capabilities to execute the        activity.</p></div>        <ol class="ol steps"><li class="li step stepexpand">                <span class="ph cmd">Configure the value for a custom capability.</span>                <div class="itemgroup info"><span class="ph">An example is a capability for                                    <span class="ph uicontrol">DOMAIN</span>, with a value of                                    <span class="ph uicontrol">service-now</span>.</span></div>            </li><li class="li step stepexpand">                <span class="ph cmd">Click <span class="ph uicontrol">Submit</span>.</span>            </li><li class="li step stepexpand">                <span class="ph cmd">Click <span class="ph uicontrol">Edit</span> in the MID Servers related list to add MID                    Servers to the capability.</span>            </li><li class="li step stepexpand">                <span class="ph cmd">Select one or more MID Servers for this capability from the slushbucket.</span>            </li><li class="li step stepexpand">                <span class="ph cmd">Click <span class="ph uicontrol">Save</span>.</span>                <div class="itemgroup info">                    <p class="p">The capability defined here also appears in the primary record for this MID                        Server.</p>                </div>            </li></ol>    </div>    <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:MID_Server_Capability&amp;version&#61;jakarta" target="_blank" rel="nofollow">MID Server capabilities</a></div></div></div></div>]]></content>
+        <last_sync>2019-03-01 13:14:08</last_sync>
+        <modifier>normal</modifier>
+        <name>ecc_agent_capability-normal</name>
+        <page>ecc_agent_capability</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-04-05 12:58:07</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>25c04b11db55d780ed28f209af9619db</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>ecc_agent_capability-normal</sys_name>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_embedded_help_content_25c04b11db55d780ed28f209af9619db</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-03-01 13:14:08</sys_updated_on>
+        <version>j</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=25c04b11db55d780ed28f209af9619db"/>
+</record_update>

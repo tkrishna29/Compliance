@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Recording of the Complaint" section_id="7f991248dbd6b20067b8f2f9af961967" sys_domain="global" table="x_grs_compliance_integrityconcern" version="3" view="gil_assign_case">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>0</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:17</sys_created_on>
+            <sys_id>893f942edbc06300ed28f209af961960</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>concern_status</element>
+            <position>1</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:17</sys_created_on>
+            <sys_id>413f942edbc06300ed28f209af961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>concern_raised_through</element>
+            <position>2</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:18</sys_created_on>
+            <sys_id>c13f942edbc06300ed28f209af961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>complaint_level</element>
+            <position>3</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:18</sys_created_on>
+            <sys_id>453f942edbc06300ed28f209af961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>compliance_notes</element>
+            <position>4</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:18</sys_created_on>
+            <sys_id>c53f942edbc06300ed28f209af961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:18</sys_created_on>
+            <sys_id>493f942edbc06300ed28f209af961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:18</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>region_function</element>
+            <position>6</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:18</sys_created_on>
+            <sys_id>c93f942edbc06300ed28f209af961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>country_of_incident</element>
+            <position>7</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:18</sys_created_on>
+            <sys_id>4d3f942edbc06300ed28f209af961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>function</element>
+            <position>8</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:18</sys_created_on>
+            <sys_id>cd3f942edbc06300ed28f209af961961</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_investigator</element>
+            <position>9</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:18</sys_created_on>
+            <sys_id>413f942edbc06300ed28f209af961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_created_on</element>
+            <position>10</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 15:17:18</sys_created_on>
+            <sys_id>c13f942edbc06300ed28f209af961962</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Recording of the Complaint" display_value="Recording of the Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="37991248dbd6b20067b8f2f9af961967">7f991248dbd6b20067b8f2f9af961967</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 15:17:18</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Recording of the Complaint</caption>
+            <header>false</header>
+            <name>x_grs_compliance_integrityconcern</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-18 13:35:09</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7f991248dbd6b20067b8f2f9af961967</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Recording of the Complaint</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_ui_section_7f991248dbd6b20067b8f2f9af961967</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-18 13:35:09</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="GIL Assign Case" name="gil_assign_case">37991248dbd6b20067b8f2f9af961967</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="integrity_policy" table="x_grs_compliance_air_issues" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complying with Comp Laws</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>0</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:02:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f3638e98db78f2403a22fbb9af961940</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>Complying with Comp Laws</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Conflicts of Interest</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>1</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:02:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9c8342d8db78f2403a22fbb9af96194d</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>Conflicts of Interest</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Controllership</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>2</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:03:05</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e68342d8db78f2403a22fbb9af961939</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>Controllership</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Environment Health &amp; Safety</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>3</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:03:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a89302d8db78f2403a22fbb9af9619e8</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>Environment Health &amp; Safety</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Fair Employment Practices</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>4</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:03:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>539302d8db78f2403a22fbb9af9619e9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>Fair Employment Practices</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Improper Payments</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>5</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:03:40</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>aea38e58db78f2403a22fbb9af961930</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>Improper Payments</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Insider Trading &amp; Stock Tipping</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>6</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:04:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c1b342d8db78f2403a22fbb9af96194f</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>Insider Trading &amp; Stock Tipping</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Intellectual Property</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>7</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:04:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0be302d8db78f2403a22fbb9af9619e9</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>Intellectual Property</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>International Trade Controls</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>8</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:06:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2ef38e58db78f2403a22fbb9af961931</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>International Trade Controls</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Money Laundering Prevention</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>9</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:06:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>495482d8db78f2403a22fbb9af961984</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:57</sys_updated_on>
+            <value>Money Laundering Prevention</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Privacy</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>10</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:07:23</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3484421cdb78f2403a22fbb9af9619e9</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-29 11:06:03</sys_updated_on>
+            <value>Privacy</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Regulatory Excellence</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>11</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:07:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>1b84421cdb78f2403a22fbb9af961967</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-29 11:06:03</sys_updated_on>
+            <value>Regulatory Excellence</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Security &amp; Crisis Management</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>12</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:07:47</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ae94061cdb78f2403a22fbb9af9619b0</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-29 11:06:03</sys_updated_on>
+            <value>Security &amp; Crisis Management</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Supplier Relationships</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>13</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:08:01</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>11a486d8db78f2403a22fbb9af961939</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-29 11:06:03</sys_updated_on>
+            <value>Supplier Relationships</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Working with Governments</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>14</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:08:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bcb4461cdb78f2403a22fbb9af96199a</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-29 11:06:03</sys_updated_on>
+            <value>Working with Governments</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Non-S&amp;L Policy</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>15</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:07:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>017482d8db78f2403a22fbb9af961985</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-04-05 13:07:24</sys_updated_on>
+            <value>Other/Non-S&amp;L Policy</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>integrity_policy</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_grs_compliance_air_issues</name>
+            <sequence>16</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-29 11:03:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ac63e24fdb059380ed28f209af96192d</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-04-05 13:07:28</sys_updated_on>
+            <value>other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>integrity_policy</element>
+            <name>x_grs_compliance_air_issues</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-03 17:02:48</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>d90d2f2edb43f600e0367afc0f96196f</sys_id>
+            <sys_mod_count>36</sys_mod_count>
+            <sys_name>integrity_policy</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_choice_x_grs_compliance_air_issues_integrity_policy</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 21:05:26</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

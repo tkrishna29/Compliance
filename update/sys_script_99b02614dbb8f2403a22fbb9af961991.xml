@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_grs_compliance_air_issues</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create AIRConcerns</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+
+	var air_rec = new GlideRecord('x_grs_compliance_annualintegrityreview');
+	air_rec.addQuery('number',current.air_form.number);
+	air_rec.query();
+	
+	if(air_rec.next()) {
+		var gr = new GlideRecord('x_grs_compliance_integrityconcern');
+		gr.newRecord();
+		gr.aii_reference = current.number;
+		gr.individual_name = current.concern_raised_by;
+		gr.air_violated_policy = current.integrity_policy2;
+		gr.other_integrity_policy = current.other_integrity_policy;
+		gr.concern_description = current.concern_description;
+		gr.concern_raised_through = 'Annual Integrity Review';
+		gr.individual_email = current.concern_raised_email;
+		gr.issue_addressed  = current.issue_addressed;	
+		gr.response_description  = current.response_description;
+		gr.individual_name = current.concern_raised_by;
+		gr.air_reference = air_rec.number;
+		gr.meeting_organizer_name = air_rec.organizer_name;
+		gr.meeting_hr_representative = air_rec.organizer_hr;
+		gr.compliance_notes = "AIR ";
+		gr.insert();
+	}
+	
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-02-03 19:11:04</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>99b02614dbb8f2403a22fbb9af961991</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Create AIRConcerns</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_script_99b02614dbb8f2403a22fbb9af961991</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2018-05-16 15:26:24</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=99b02614dbb8f2403a22fbb9af961991"/>
+</record_update>

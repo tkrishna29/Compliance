@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_grs_compliance_integrityconcern" version="2" view="RPT554940e6dbda36003a22fbb9af961904">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_grs_compliance_integrityconcern" element="NULL" name="x_grs_compliance_integrityconcern" parent="NULL" relationship="NULL" sys_domain="global" view="176a8b66dbcfb600e0367afc0f9619f8">41e8fe94db6a4300092efbf9af961970</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-11-16 16:57:06</sys_created_on>
+            <sys_id>45e8fe94db6a4300092efbf9af961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-11-16 16:57:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>state</element>
+            <list_id display_value="x_grs_compliance_integrityconcern" element="NULL" name="x_grs_compliance_integrityconcern" parent="NULL" relationship="NULL" sys_domain="global" view="176a8b66dbcfb600e0367afc0f9619f8">41e8fe94db6a4300092efbf9af961970</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-11-16 16:57:06</sys_created_on>
+            <sys_id>c5e8fe94db6a4300092efbf9af961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-11-16 16:57:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>workflow_stage</element>
+            <list_id display_value="x_grs_compliance_integrityconcern" element="NULL" name="x_grs_compliance_integrityconcern" parent="NULL" relationship="NULL" sys_domain="global" view="176a8b66dbcfb600e0367afc0f9619f8">41e8fe94db6a4300092efbf9af961970</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-11-16 16:57:06</sys_created_on>
+            <sys_id>49e8fe94db6a4300092efbf9af961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-11-16 16:57:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>assigned_investigator</element>
+            <list_id display_value="x_grs_compliance_integrityconcern" element="NULL" name="x_grs_compliance_integrityconcern" parent="NULL" relationship="NULL" sys_domain="global" view="176a8b66dbcfb600e0367afc0f9619f8">41e8fe94db6a4300092efbf9af961970</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-11-16 16:57:06</sys_created_on>
+            <sys_id>c9e8fe94db6a4300092efbf9af961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-11-16 16:57:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>compliance_notes</element>
+            <list_id display_value="x_grs_compliance_integrityconcern" element="NULL" name="x_grs_compliance_integrityconcern" parent="NULL" relationship="NULL" sys_domain="global" view="176a8b66dbcfb600e0367afc0f9619f8">41e8fe94db6a4300092efbf9af961970</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-11-16 16:57:06</sys_created_on>
+            <sys_id>4de8fe94db6a4300092efbf9af961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-11-16 16:57:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>concern_type</element>
+            <list_id display_value="x_grs_compliance_integrityconcern" element="NULL" name="x_grs_compliance_integrityconcern" parent="NULL" relationship="NULL" sys_domain="global" view="176a8b66dbcfb600e0367afc0f9619f8">41e8fe94db6a4300092efbf9af961970</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-11-16 16:57:06</sys_created_on>
+            <sys_id>cde8fe94db6a4300092efbf9af961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-11-16 16:57:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>incident_location</element>
+            <list_id display_value="x_grs_compliance_integrityconcern" element="NULL" name="x_grs_compliance_integrityconcern" parent="NULL" relationship="NULL" sys_domain="global" view="176a8b66dbcfb600e0367afc0f9619f8">41e8fe94db6a4300092efbf9af961970</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-11-16 16:57:06</sys_created_on>
+            <sys_id>41e8fe94db6a4300092efbf9af961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-11-16 16:57:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>investigation_start_date</element>
+            <list_id display_value="x_grs_compliance_integrityconcern" element="NULL" name="x_grs_compliance_integrityconcern" parent="NULL" relationship="NULL" sys_domain="global" view="176a8b66dbcfb600e0367afc0f9619f8">41e8fe94db6a4300092efbf9af961970</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-11-16 16:57:06</sys_created_on>
+            <sys_id>c1e8fe94db6a4300092efbf9af961971</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-11-16 16:57:06</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_grs_compliance_integrityconcern</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-11-16 16:57:06</sys_created_on>
+            <sys_customer_update>true</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>41e8fe94db6a4300092efbf9af961970</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_grs_compliance_integrityconcern</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_ui_list_x_grs_compliance_integrityconcern_RPT554940e6dbda36003a22fbb9af961904</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-11-16 16:57:06</sys_updated_on>
+            <sys_user/>
+            <view display_value="Rpt554940e6dbda36003a22fbb9af961904" name="RPT554940e6dbda36003a22fbb9af961904">176a8b66dbcfb600e0367afc0f9619f8</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

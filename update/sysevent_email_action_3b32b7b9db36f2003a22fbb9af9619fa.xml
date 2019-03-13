@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="IntegrityConcern" name="IntegrityConcern">3d0e8802dba203008a08f35aaf9619af</category>
+        <collection>x_grs_compliance_integrityconcern</collection>
+        <condition table="x_grs_compliance_integrityconcern">individual_emailISNOTEMPTY^EQ<item endquery="false" field="individual_email" goto="false" newquery="false" operator="ISNOTEMPTY" or="false" value=""/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>text/html</content_type>
+        <description>Send Email to Integrity Concern Complainant if he choose to mention his email id.</description>
+        <event_name>x_grs_compliance.AIR_ToCmplnt_Case_New</event_name>
+        <event_parm_1>false</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item>event.parm1</item>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message/>
+        <message_html><![CDATA[<p><span style="font-family: arial, helvetica, sans-serif; font-size: small;"><span style="font-size: small;">&nbsp;</span><span style="font-size: small;">${mail_script:u_integrity_from_email}</span></span></p>
+<p><span style="color: #000000; font-size: 11pt; font-family: arial, helvetica, sans-serif;">FieldCore is committed to confidentially and promptly responding to the concern or question you raised during an Annual Integrity Review. Your concern will be forwarded to an investigator for review within 72 business hours of receipt, during regularly scheduled US business hours.</span></p>
+<p><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 11pt;">Concern Reference No: ${number}</span></p>
+<p><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 11pt;">Concern Description:: ${concern_description}<br /></span></p>
+<p>&nbsp;</p>
+<p><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 11pt;">Contact fieldcore.integrity@ge.com with additional questions regarding the Integrity process.</span></p>
+<p>&nbsp;</p>
+<p><span style="font-size: small;"><span style="color: #000000; font-family: arial, helvetica, sans-serif; font-size: 11pt;"><em style="font-size: 11px;"><img id="pasted_img_8e77ad08e777c08e77ec08e707708e7d" src="sys_attachment.do?sys_id=18e12539db4cc3008a08f35aaf961928" alt="" width="0" height="0" /><img id="pasted_img_95c6bc095c8f6095ccfb095c806095c0" src="sys_attachment.do?sys_id=d9e1a179db4cc3008a08f35aaf9619b3" alt="" width="0" height="0" /><img id="pasted_img_1888bb0188405018808c0188fa90188e" src="sys_attachment.do?sys_id=b9e1ad39db4cc3008a08f35aaf9619e8" alt="" width="0" height="0" />Note: As&nbsp;<img id="pasted_img_4c23da904c2333204c239d004c233dc0" src="sys_attachment.do?sys_id=8ff1e179db4cc3008a08f35aaf961949" alt="" width="0" height="0" /><img id="pasted_img_45f7d46045f73e8045f7f6c045f7ae20" src="sys_attachment.do?sys_id=1bf1a179db4cc3008a08f35aaf9619b5" alt="" width="0" height="0" /><img id="pasted_img_44f623e044f648e044f6db0044f63660" src="sys_attachment.do?sys_id=d7f1e179db4cc3008a08f35aaf96194b" alt="" width="0" height="0" />part of the transition to FieldCore, Granite integrity concerns will be managed through the FieldCore system. Confidentiality and privacy will continue to be upheld in accordance with The Spirit &amp; The Letter.</em></span></span></p>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>AIR_ToCmplnt_Case_New</name>
+        <omit_watermark>false</omit_watermark>
+        <order>100</order>
+        <push_message_only>false</push_message_only>
+        <recipient_fields>individual_email</recipient_fields>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>AIR - Integrity Request Received: #${number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-05-19 03:03:08</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3b32b7b9db36f2003a22fbb9af9619fa</sys_id>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>AIR_ToCmplnt_Case_New</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sysevent_email_action_3b32b7b9db36f2003a22fbb9af9619fa</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2018-05-25 14:59:18</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template/>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+</record_update>

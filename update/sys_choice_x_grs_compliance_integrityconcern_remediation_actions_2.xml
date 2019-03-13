@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="remediation_actions_2" table="x_grs_compliance_integrityconcern" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>remediation_actions_2</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Coaching</label>
+            <language>en</language>
+            <name>x_grs_compliance_integrityconcern</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-07 16:30:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e0622261db7076403a22fbb9af9619a9</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-02-07 16:30:21</sys_updated_on>
+            <value>Coaching</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>remediation_actions_2</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Term</label>
+            <language>en</language>
+            <name>x_grs_compliance_integrityconcern</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-07 16:29:41</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>cb32aa21db7076403a22fbb9af9619b5</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-02-07 16:29:41</sys_updated_on>
+            <value>Term</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>remediation_actions_2</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Training</label>
+            <language>en</language>
+            <name>x_grs_compliance_integrityconcern</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-07 16:30:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87622261db7076403a22fbb9af961921</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-02-07 16:30:32</sys_updated_on>
+            <value>Training</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>remediation_actions_2</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Written Reprimand</label>
+            <language>en</language>
+            <name>x_grs_compliance_integrityconcern</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-07 16:30:07</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d4522261db7076403a22fbb9af96199a</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-02-07 16:30:10</sys_updated_on>
+            <value>Written Reprimand</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>remediation_actions_2</element>
+            <name>x_grs_compliance_integrityconcern</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-02-07 16:29:41</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>05f4ab62db43f600e0367afc0f961961</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_name>remediation_actions_2</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_choice_x_grs_compliance_integrityconcern_remediation_actions_2</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-02-07 16:30:28</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

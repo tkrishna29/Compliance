@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Compliance">57ea7f54db59f60067b8f2f9af9619fa</application>
+        <filter/>
+        <name>TestConcerns</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_grs_compliance.user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-03-08 02:25:49</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>ab373cbedb19ba003a22fbb9af961997</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TestConcerns</sys_name>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_ui_module_ab373cbedb19ba003a22fbb9af961997</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2017-03-08 02:25:49</sys_updated_on>
+        <table>x_grs_compliance_testconcern</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

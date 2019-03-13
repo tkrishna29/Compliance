@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element max_length="40" name="x_grs_compliance_testconcern" type="collection">
+        <element label="investigator" max_length="32" name="investigator" reference="sys_user" type="reference"/>
+        <element label="Test Field1" max_length="40" name="test_field1" type="string"/>
+    </element>
+</database>

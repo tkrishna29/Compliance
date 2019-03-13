@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_related sys_domain="global" table="x_grs_compliance_integrityconcern" version="2" view="">
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IntegrityConcern - Default view" name="x_grs_compliance_integrityconcern" related_list="NULL" sys_domain="global" view="Default view">35f29692db11ba003a22fbb9af961983</list_id>
+            <order_by/>
+            <position>0</position>
+            <related_list>x_grs_compliance_accused_information.integrity_concern</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-03-06 19:49:37</sys_created_on>
+            <sys_id>79f29692db11ba003a22fbb9af961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-03-06 19:49:37</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IntegrityConcern - Default view" name="x_grs_compliance_integrityconcern" related_list="NULL" sys_domain="global" view="Default view">35f29692db11ba003a22fbb9af961983</list_id>
+            <order_by/>
+            <position>1</position>
+            <related_list>x_grs_compliance_parties_interviewed.integrity_concern</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-03-06 19:49:37</sys_created_on>
+            <sys_id>3df29692db11ba003a22fbb9af961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-03-06 19:49:37</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list_entry action="INSERT_OR_UPDATE">
+            <filter/>
+            <list_id display_value="IntegrityConcern - Default view" name="x_grs_compliance_integrityconcern" related_list="NULL" sys_domain="global" view="Default view">35f29692db11ba003a22fbb9af961983</list_id>
+            <order_by/>
+            <position>2</position>
+            <related_list>x_grs_compliance_remediation_actions.integrity_concern</related_list>
+            <sys_class_name>sys_ui_related_list_entry</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-03-06 19:49:37</sys_created_on>
+            <sys_id>fdf29692db11ba003a22fbb9af961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-03-06 19:49:37</sys_updated_on>
+        </sys_ui_related_list_entry>
+        <sys_ui_related_list action="INSERT_OR_UPDATE">
+            <calculated_name>IntegrityConcern - Default view</calculated_name>
+            <filter/>
+            <name>x_grs_compliance_integrityconcern</name>
+            <order_by/>
+            <position/>
+            <related_list/>
+            <sys_class_name>sys_ui_related_list</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-03-06 19:49:37</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>35f29692db11ba003a22fbb9af961983</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>IntegrityConcern - Default view</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_ui_related_x_grs_compliance_integrityconcern_null</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-03-06 19:49:37</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_related_list>
+    </sys_ui_related>
+</record_update>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_email_template">
+    <sysevent_email_template action="INSERT_OR_UPDATE">
+        <collection>x_grs_compliance_integrityconcern</collection>
+        <email_layout/>
+        <message/>
+        <message_html><![CDATA[<p><font size="3" color="#993366"><strong>New Integrity Concern Alert:</strong></font></p>
+<p>&nbsp;</p>
+<table style="height: 163px;" border="0" width="80" cellspacing="0" cellpadding="0">
+<tbody>
+<tr>
+<td>
+<table style="border-collapse: collapse; height: 375px;" border="0" width="645" cellspacing="10" cellpadding="10" align="left">
+<tbody>
+<tr>
+<td><img style="align: baseline;" title="" src="granite_logo.pngx" alt="" align="baseline" border="" hspace="" vspace="" /></td>
+</tr>
+<tr>
+<td height="100">
+<p><font color="#000080">Hi,</font></p>
+<p><font color="#000080">You have a new Integrity Concern created waiting in the queue:</font></p>
+<p><font color="#000080">Accused Details: ${accused_information}</font></p>
+<p><font color="#000080">Concern type: ${concern_type}</font></p>
+<p><font color="#000080">Concerned Individual type: ${concern_filler_type}</font></p>
+<p><font color="#000080">Concern Raised through: ${concern_raised_through}</font></p>
+<p><font color="#000080">Individual who raised Concern: ${individual_name}</font></p>
+<p><font color="#000080">Individual company: ${individual_company}</font></p>
+<p><font color="#000080">Individual email: ${individual_email}</font></p>
+</td>
+</tr>
+<tr>
+<td>
+<table border="0" width="700" cellspacing="0" cellpadding="0" align="center">
+<tbody>
+<tr>
+<td colspan="4"><font size="1" color="#808080" face="GE Inspira">Copyright&copy; 2014 Granite Services, Inc.</font></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+</tbody>
+</table>]]></message_html>
+        <message_list/>
+        <message_text/>
+        <name>NotifyConcern</name>
+        <sms_alternate/>
+        <subject>New Integrity Concern created:</subject>
+        <sys_class_name>sysevent_email_template</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-02-01 23:05:31</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>edd2bc7bdbacb2403a22fbb9af96195c</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>NotifyConcern</sys_name>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sysevent_email_template_edd2bc7bdbacb2403a22fbb9af96195c</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2017-02-02 20:36:34</sys_updated_on>
+        <sys_version>2</sys_version>
+    </sysevent_email_template>
+</record_update>

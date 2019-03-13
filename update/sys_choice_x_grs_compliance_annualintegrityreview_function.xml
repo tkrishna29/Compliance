@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="function" table="x_grs_compliance_annualintegrityreview" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Administrative</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:36:17</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e74bfa831be32b009ce70dc2cd4bcb4e</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:57:08</sys_updated_on>
+            <value>Administrative</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Communications</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:51:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>56cef6c71be32b009ce70dc2cd4bcb4b</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:57:10</sys_updated_on>
+            <value>Communications</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>EHS</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:36:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d16b3e471ba32b009ce70dc2cd4bcbd2</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:57:12</sys_updated_on>
+            <value>EHS</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Excellence</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:40:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>053c7a831be32b009ce70dc2cd4bcbfe</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:57:13</sys_updated_on>
+            <value>Excellence</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Executive</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:36:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ea6bfe831be32b009ce70dc2cd4bcbef</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:57:13</sys_updated_on>
+            <value>Executive</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Field EE</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:36:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>007b32c31be32b009ce70dc2cd4bcb72</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:57:15</sys_updated_on>
+            <value>Field EE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Field Operations</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:56:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f1df720b1be32b009ce70dc2cd4bcb38</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:56:21</sys_updated_on>
+            <value>Field Operations</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Finance</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:56:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fcfffec71be32b009ce70dc2cd4bcb59</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:56:41</sys_updated_on>
+            <value>Finance</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Human Resources</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:39:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b3fbb2831be32b009ce70dc2cd4bcb4a</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:57:17</sys_updated_on>
+            <value>Human Resources</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Info Technology</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:58:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b430c70b1be32b009ce70dc2cd4bcb4d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:58:20</sys_updated_on>
+            <value>Info Technology</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Legal/Immigration</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:39:43</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c31c72c31be32b009ce70dc2cd4bcb8f</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:54:47</sys_updated_on>
+            <value>Legal/Immigration</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Operational</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:39:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>652c72c31be32b009ce70dc2cd4bcb5d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:54:50</sys_updated_on>
+            <value>Operational</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Operations</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:55:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>24afb20b1be32b009ce70dc2cd4bcb14</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:55:55</sys_updated_on>
+            <value>Operations</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Quality</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:40:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>244c7e831be32b009ce70dc2cd4bcb13</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:55:10</sys_updated_on>
+            <value>Quality</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Region Operations</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:40:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ee4c3ac31be32b009ce70dc2cd4bcbaa</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:55:15</sys_updated_on>
+            <value>Region Operations</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resource Operations</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:40:37</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>bc5c72c31be32b009ce70dc2cd4bcb5d</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:55:21</sys_updated_on>
+            <value>Resource Operations</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>function</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Service Lines</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:40:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8b5c7e831be32b009ce70dc2cd4bcb1c</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:55:25</sys_updated_on>
+            <value>Service Lines</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>function</element>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:36:17</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>d75b7a831be32b009ce70dc2cd4bcbf6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>function</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_choice_x_grs_compliance_annualintegrityreview_function</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:36:17</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_content">
+    <sys_embedded_help_content action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <category>reporting</category>
+        <content><![CDATA[  <h1 class="title topictitle1">Report Statistics list</h1>    <div class="body conbody">    <div class="section">      <p class="p">Report statistics show how many times a report has been run and how long on average it        takes to execute the run. The <span class="ph uicontrol">Report Statistics</span> list displays all        reports that have been run.</p>      <p class="p"><span class="ph">Click the column headers to search, sort, filter, and    edit data. </span></p>      <ul class="ul" id="report_stats_list-normal__ul_t24_3sj_dz"><li class="li">Report – The name of the report. Click the hyperlink to view the report properties.</li><li class="li">Last run – The date and time the report was last run.</li><li class="li">Runs – The number of times the report has been run.</li><li class="li">Runs on page – The number of times the report has been run on a dashboard or          homepage.</li><li class="li">Recent run time – The average execution time of the report in milliseconds based on the          25 most recent runs. Edit the glide.report.recent_executions_number property to change the          number of runs used to calculate this value.</li><li class="li">Run time – The average execution time in milliseconds of all runs of the report.</li></ul>      <ul class="ul" id="report_stats_list-normal__ul_mgs_2nk_b1b"><li class="li">To view the reports that take the most time to run, sort <span class="ph uicontrol">Recent run            time</span> from z-a.</li><li class="li">To view used reports, filter out the value 0 from the <span class="ph uicontrol">Runs</span>          column.</li><li class="li">To view the most used reports, sort the <span class="ph uicontrol">Runs</span> column from          z-a.</li></ul>    </div>  </div>  <div class="related-links"><div class="relinfo"><div class="reltitle">Related information<br /><div><a class="link" href="https://docs.servicenow.com/?context&#61;CSHelp:report-statistics&amp;version&#61;jakarta" target="_blank" rel="nofollow">Report statistics</a></div></div></div></div>]]></content>
+        <last_sync>2019-03-12 12:45:10</last_sync>
+        <modifier>normal</modifier>
+        <name>report_stats_list-normal</name>
+        <page>report_stats_list</page>
+        <product>1</product>
+        <qualifier/>
+        <role/>
+        <role_order>1000</role_order>
+        <snc_created>true</snc_created>
+        <sys_class_name>sys_embedded_help_content</sys_class_name>
+        <sys_created_by>system</sys_created_by>
+        <sys_created_on>2018-04-16 12:32:08</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>d854e73cdbad9f80ed28f209af961998</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>report_stats_list-normal</sys_name>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_embedded_help_content_d854e73cdbad9f80ed28f209af961998</sys_update_name>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2019-03-12 12:45:10</sys_updated_on>
+        <version>j</version>
+    </sys_embedded_help_content>
+    <sys_translated_text action="delete_multiple" query="documentkey=d854e73cdbad9f80ed28f209af961998"/>
+</record_update>

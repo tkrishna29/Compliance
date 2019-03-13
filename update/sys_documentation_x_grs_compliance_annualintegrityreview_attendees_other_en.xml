@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="attendees_other" label="Add Attendees, not found on the “Add Attendees” page:" language="en" table="x_grs_compliance_annualintegrityreview">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>attendees_other</element>
+            <help/>
+            <hint/>
+            <label>Add Attendees, not found on the “Add Attendees” page:</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <plural>Add Attendees, not found on the “Add Attendees” page:s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 20:55:16</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>72c79a15db2632003a22fbb9af9619a5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Add Attendees, not found on the “Add Attendees” page:</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_documentation_x_grs_compliance_annualintegrityreview_attendees_other_en</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-04-09 13:43:06</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

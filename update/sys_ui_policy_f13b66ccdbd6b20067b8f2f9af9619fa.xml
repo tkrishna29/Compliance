@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_grs_compliance_integrityconcern">concern_status=Investigation In Progress^ORconcern_status=Additional Investigation Required^EQ<item endquery="false" field="concern_status" goto="false" newquery="false" operator="=" or="false" value="Investigation In Progress"/>
+            <item endquery="false" field="concern_status" goto="false" newquery="false" operator="=" or="true" value="Additional Investigation Required"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>false</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>900</order>
+        <reverse_if_false>false</reverse_if_false>
+        <run_scripts>false</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+
+}]]></script_true>
+        <set_values/>
+        <short_description>Set AIR Under Investigation fields</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-04-18 14:53:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f13b66ccdbd6b20067b8f2f9af9619fa</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>Set AIR Under Investigation fields</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_ui_policy_f13b66ccdbd6b20067b8f2f9af9619fa</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2017-04-28 16:23:15</sys_updated_on>
+        <table>x_grs_compliance_integrityconcern</table>
+        <ui_type>0</ui_type>
+        <view display_value="" name="AIR_Under_Investigation">AIR_Under_Investigation</view>
+    </sys_ui_policy>
+</record_update>

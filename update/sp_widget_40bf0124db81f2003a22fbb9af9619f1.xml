@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <client_script><![CDATA[function ($scope, $rootScope, $timeout, spUtil, $location) {
+	var c = this;
+	c.data.action = "none";
+
+//	c.data.incident_date =  new Pikaday({ field: document.getElementById('incident_date') });
+
+	c.data.concern_type_flag = "hide";
+
+	
+	//$('#datetimepicker').datetimepicker();
+	c.disableSubmit = function(){
+		return false;
+	}; 
+/*	c.testButton = function() {
+		//alert(c.data.concern_type);
+	//	alert(c.concern_other.$name); 
+	} */
+	
+	c.checkOtherConcern = function() {
+		var splitstr = c.data.concern_type_arr.join().split(',');
+		
+	if (splitstr.indexOf("Other") != -1)
+			c.data.concern_type_flag = "show";
+		else 
+			c.data.concern_type_flag = "hide"; 
+	} 
+	
+	c.redirect = function() {
+	//	 $window.location.href = url;
+	//	$location.url('https://granitedev.service-now.com/sp');
+		window.location.reload(false);
+	} 
+	c.addconcern = function() {
+
+	/*	var in_resp = grecaptcha.getResponse();
+
+		if(!in_resp) 
+			spUtil.addErrorMessage("Please check the recapatcha");
+		
+		else { */
+				c.data.action = "add_concern";
+//				c.data.recaptcha_resp = in_resp;
+
+				c.server.update().then(function(response) {
+					
+	//				if(c.data.recaptcha.success) {
+
+		//				grecaptcha.reset();
+
+						if (c.data.status == 'success') {
+							//c.success = response["message"];
+//							c.success = c.data.message;
+//							spUtil.addInfoMessage("Successfully submitted.");
+							c.disableSubmit = function(){
+								return true;
+							};
+						}
+						else if (c.data.status == 'error') 
+								c.success = 'There was an error processing your request';
+//					}
+//					else
+//						spUtil.addErrorMessage("Your a bot!"); 
+				});  //End of Server Update
+//		} //End of Else
+			}; // End of Add Concern function 			
+
+/*	$scope.registrationInit = function () {
+		c.concern_flag = false;
+		
+	};	 */
+	
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>.form-group.required .control-label:before {
+  content:"*";
+  color:red;
+}
+li { 
+    padding-left: none; 
+}
+ul {
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+  //  margin: 2;
+}
+ 
+ul.checkmark li:before {
+    content:"\2713\0020" ;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>integrityconcern</id>
+        <internal>false</internal>
+        <link/>
+        <name>IntegrityConcern</name>
+        <option_schema/>
+        <public>true</public>
+        <roles>public</roles>
+        <script><![CDATA[(function($sp, input, data, options) {
+	//"use strict";
+	
+	data.is_logged_in = gs.getSession().isLoggedIn();
+	data.sys_id = '-1';
+	
+
+	if (input && input.action === "add_concern" ) {
+//		var r = new sn_ws.RESTMessageV2('GoogleRecaptcha','get');
+	//	var r = new RESTMessage('GoogleRecaptcha','get');
+//		r.setStringParameter('in_resp',input.recaptcha_resp);
+//		var rest_response = r.execute();
+				
+//		data.recaptcha = JSON.parse(rest_response.getBody());
+		
+		concern_type = input.concern_type_arr.join();
+	if(input.indv_email == null)
+		input.indv_email = '';
+	if(input.orgntr_email == null)
+		input.orgntr_email = '';
+	if(input.concern_type_other == null)
+		input.concern_type_other = '';
+	if(input.indv_fullname == null)
+		input.indv_fullname = '';
+	
+														
+//		if(data.recaptcha.success) {
+			
+			var result = {};
+			var gr = new GlideRecord('x_grs_compliance_integrityconcern');
+			gr.newRecord();
+			gr.setValue('concern_filler_type', input.indv_type);
+			gr.setValue('concern_type', concern_type);
+			gr.setValue('concern_type_other', input.concern_type_other);
+			gr.setValue('individual_name', input.indv_fullname);
+			gr.setValue('individual_phone', input.indv_contactno);
+			gr.setValue('individual_email', input.indv_email);
+			gr.setValue('orgntr_email', input.orgntr_email);
+			gr.setValue('individual_best_contact_time', input.indv_best_contact_time);
+			gr.setValue('individual_company', input.indv_comp);
+			gr.setValue('individual_company_other', input.indv_comp_other);			
+			gr.setValue('accused_employee', input.accused_names);
+			gr.setValue('accused_company', input.accused_comp);
+			gr.setValue('accused_company_other', input.accused_comp_other);			
+			gr.setValue('incident_location', input.incident_location);
+			gr.setValue('incident_relvnt_dates', input.incident_relvnt_dates);
+			gr.setValue('concern_witnesses', input.witness_names);
+			gr.setValue('concern_description', input.concern_details);
+			gr.setValue('concern_raised_through', 'INTEGRITY');
+
+			var sys_id = gr.insert();
+
+			if (!gs.nil(sys_id)) {
+					data.sys_id = sys_id;
+					data.status = "success";
+					var gr2 = new GlideRecord('x_grs_compliance_integrityconcern');
+					gr2.addQuery('sys_id',sys_id);
+					gr2.query();
+					if (gr2.next()) 
+						data.incident_number = gr2.number;
+					data.message = gs.getMessage("Thank you for raising concern. For further Information, HR will get back to you if your contact information was provided.");
+			} 
+			else 
+					data.status = "error";
+			
+			data.result = result;
+			return data;
+//	} // Data Recaptcha condition ends
+}	//Input action: add concern ends
+})($sp, input, data, options);
+
+]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-02-16 18:10:36</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>40bf0124db81f2003a22fbb9af9619f1</sys_id>
+        <sys_mod_count>537</sys_mod_count>
+        <sys_name>IntegrityConcern</sys_name>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sp_widget_40bf0124db81f2003a22fbb9af9619f1</sys_update_name>
+        <sys_updated_by>Raghu.Kumar</sys_updated_by>
+        <sys_updated_on>2018-05-31 15:05:47</sys_updated_on>
+        <template><![CDATA[<div  class="panel b"> 
+    <!-- header removed ng-init="registrationInit() from panel b -->
+  
+  
+<div class="panel-heading bg-primary">
+  		<h4 class="panel-title">${Integrity, Always}</h4>
+</div>  
+<!-- body -->
+<div class="panel-body" >
+	  <div ng-if="data.sys_id != '-1' && data.status == 'success'" class="alert alert-success" role="alert"><strong>Success! </strong>{{data.message}}</div>
+    <div>
+         <sp-model form_model="data.f" mandatory="mandatory"></sp-model>
+    </div>
+  
+<table id="layoutsTable">
+<tbody>
+<tr>
+<td>
+<div class="ms-rte-layoutszone-outer">
+<div class="ms-rte-layoutszone-inner">
+<div class="ms-rteFontSize-2">If you have a concern about compliance with any Company policy, you have a responsibility to raise the concern. Raising a concern protects the FieldCore community.</div>
+<span id="ms-rterangepaste-end" class="ms-rteFontSize-2"></span>
+<div>&nbsp;</div>
+  
+<div class="form-group">
+<div class="col-sm-6">
+<div class="ms-rteFontSize-3"><strong>Raise Concerns Early</strong></div>
+<ul class="checkmark">
+<li class="ms-rteFontSize-2">The longer we wait to address a concern, the worse it may become.</li>
+<div>&nbsp;</div>
+</ul> 
+</div>
+<div class="col-sm-6">
+<div class="ms-rteFontSize-3"><strong>You May Remain Anonymous</strong></div>
+<ul class="checkmark">
+<li class="ms-rteFontSize-2">However, if you identify yourself, we are able to follow up with you and provide feedback.</li>
+<div>&nbsp;</div>
+</ul> 
+</div>
+</div>
+<div class="form-group">
+<div class="col-sm-6">
+<div class="ms-rteFontSize-3"><strong>Confidentiality is Respected</strong></div>
+<ul class="checkmark">
+<li class="ms-rteFontSize-2">Your identity and the information you provide will be stored only on a "need-to-know" with those responsible for resolving the concern.</li>
+<div>&nbsp;</div>
+</ul> 
+</div>
+<div class="col-sm-6">
+<div class="ms-rteFontSize-3"><strong>Retaliation violates Company Policy</strong></div>
+<ul class="checkmark">
+<li class="ms-rteFontSize-2">FieldCore absolutely prohibits retaliation against anyone for raising or helping to address an integrity concern. Retaliation is grounds for discipline up to and including dismissal.</li>
+<div>&nbsp;</div>
+</ul> 
+</div>
+</div>
+  
+<div>&nbsp;</div>
+<div class="ms-rteFontSize-3"><strong>Reporting a Concern</strong></div>
+<div>&nbsp;</div>
+<div class="ms-rteFontSize-2">To report an Integrity or Policy concern, fill the form below or contact one of the following:</div>
+<ul class="checkmark">
+<li class="ms-rteFontSize-2">Your manager</li>
+<!-- <li class="ms-rteFontSize-2">Your local Ombudsman/Human Resources -- <a href="/intgy/SitePages/Ombuds.aspx" target="_blank" rel="nofollow">click here for listing</a></li> -->
+<li class="ms-rteFontSize-2">Any Human Resources Representative</li>
+<li class="ms-rteFontSize-2">Integrity e-mail group at <span style="text-decoration: underline;">FieldCore.Integrity@ge.com</span></li>
+<li class="ms-rteFontSize-2">Integrity Hotline (Direct Line): <strong>+1-813-367-4180</strong></li>
+ </ul>
+<!-- <ul>
+ <div>&nbsp;</div>  
+<li class="ms-rteFontSize-2">As part of the transition to FieldCore, Granite integrity concerns will be managed through the FieldCore system. Confidentiality and privacy will continue to be upheld in accordance with The Spirit & The Letter.</li>
+<div>&nbsp;</div> 
+ </ul> -->
+<div>&nbsp;</div>  
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+
+<form name="myForm" ng-submit="submitForm()" class="form-horizontal" >
+  <!-- <form name="myForm" class="form-horizontal" novalidate> -->
+  
+<!-- <p> {{myForm.$valid}}</p>    Check for form validity -->
+  <fieldset ng-disabled="c.disableSubmit()">
+    
+      <!-- Type Select box-->
+     <div class="form-group required" ng-class="{'has-error':myForm.indv_type.$invalid && !myForm.indv_type.$pristine}" >
+      <label class="col-sm-3 control-label">${Individual completing form}</label>
+        <div class="col-sm-6">
+          <select ng-model="c.data.indv_type" name="indv_type" required="true" class="form-control">
+            <option>HR</option>
+            <option>Manager</option>
+            <option>Individual Raising Concern</option>
+            <option>Other</option>
+          </select>
+      </div>
+     </div>
+        <div class="form-group">
+        <label class="col-sm-3 control-label">${Contact Email - Originator}</label>
+        <div class="col-sm-6">
+          <input type = "email" ng-model="c.data.orgntr_email" name="orgntr_email" placeholder="${Optional - Enter valid Email address}" class="form-control">
+        </div>
+       <div role="alert">
+          <span class="error" style="color:red" ng-show="myForm.orgntr_email.$error.email">
+            Not valid email!</span>
+      </div>
+    </div>
+    <div class="form-group required" ng-class="{'has-error':myForm.concern_type.$invalid && !myForm.concern_type.$pristine}">
+      <label class="col-sm-3 control-label">${Select Concern Type}</label>
+        <div class="col-sm-6">
+          <select ng-model="c.data.concern_type_arr" name="concern_type"  ng-change="c.checkOtherConcern()" class="form-control" required="true" multiple>
+            <option>Conflict of Interest</option>
+            <option>Discrimination</option>
+            <option>Drug/Alcohol use</option>
+            <option>Customer</option>
+            <option>Fraud</option>
+            <option>Harassment</option>
+            <option>Improper Payment</option>
+            <option>Retaliation</option>
+            <option>Violence in the Workspace</option>
+            <option>EHS/Safety</option>
+            <option>Other</option>
+          </select>
+      </div>
+     </div>
+
+ <!--    <div>
+     	<button type="submit" 
+              ng-click="c.testButton()"
+              class="btn btn-primary">${Test Button}</button>
+            <h1>You entered: {{c.data.concern_type}}</h1>
+       				<h1>You entered: "{{c.data.concern_type == 'Other'}}" </h1>  
+       
+     </div> -->
+
+      <div class="form-group required" ng-class="{'has-error':myForm.concern_type_other.$invalid && !myForm.concern_type_other.$pristine}" ng-show="c.data.concern_type_flag == 'show'" >
+        <label class="col-sm-3 control-label">${Other Concern Type?}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.data.concern_type_other" name="concern_type_other" placeholder="${Enter if other concern type}" class="form-control" ng-required="c.data.concern_type_flag == 'show'">
+        </div>
+     </div>
+
+    <div class="form-group" >
+      <label class="col-sm-4 control-label"><b><u>${Concern submitted on behalf of:}</u></b></label>
+    </div>    
+    
+      <!-- Individual Name input-->
+      <div class="form-group" >
+        <label class="col-sm-3 control-label">${Full Name}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.data.indv_fullname" name="indv_fullname" placeholder="${Leave blank if Anonymous}" class="form-control" aria-describedby="helpBlock1">
+					<span id="helpBlock1" style = "color:green" class="help-block">If reported anonymously with no contact information, Investigation details will not be reported back to the individual raising the concern.</span>
+        </div>
+      </div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label">${Primary Phone Number}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.data.indv_contactno" name="indv_contactno" placeholder="${Optional - Enter Phone No}" class="form-control">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">${Email Address}</label>
+        <div class="col-sm-6">
+          <input type = "email" ng-model="c.data.indv_email" name="indv_email" placeholder="${Optional - Enter valid Email address}" class="form-control">
+        </div>
+       <div role="alert">
+          <span class="error" style="color:red" ng-show="myForm.indv_email.$error.email">
+            Not valid email!</span>
+      </div>
+    </div>
+
+      <div class="form-group">
+        <label class="col-sm-3 control-label">${Best Time to Contact}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.data.indv_best_contact_time" name="indv_best_contact_time" placeholder="${Include your timezone if possible}" class="form-control">
+        </div>
+      </div>
+    
+    <div class="form-group required" ng-class="{'has-error':myForm.indv_comp.$invalid && !myForm.indv_comp.$pristine}" >
+      <label class="col-sm-3 control-label">${Company}</label>
+        <div class="col-sm-6">
+          <select ng-model="c.data.indv_comp" name="indv_comp" required="true" class="form-control">
+            <option>FieldCore</option>
+            <!-- <option>Granite</option> -->
+            <option>Other</option>
+          </select>
+      </div>
+     </div>
+    
+      <div class="form-group required" ng-class="{'has-error':myForm.indv_comp_other.$invalid && !myForm.indv_comp_other.$pristine}" ng-show="c.data.indv_comp == 'Other'" >
+        <label class="col-sm-3 control-label">${If Other Company}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.data.indv_comp_other" name="indv_comp_other" placeholder="${Enter if other Company}" class="form-control" ng-required="c.data.indv_comp == 'Other'">
+        </div>
+     </div>
+
+    <div class="form-group" >
+      <label class="col-sm-4 control-label"><b><u>${Accused Individual(s):}</u></b></label>
+    </div>    
+    
+      <div class="form-group required">
+        <label class="col-sm-3 control-label">${Name(s)}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.data.accused_names" name="accused_names" placeholder="${Enter names for all accused}" class="form-control" required>
+        </div>
+      </div>
+  
+    <div class="form-group required" >
+      <label class="col-sm-3 control-label">${Company}</label>
+        <div class="col-sm-6">
+          <select ng-model="c.data.accused_comp" name="accused_comp" class="form-control">
+            <option>FieldCore</option>
+          <!--  <option>Granite</option> -->
+            <option>Multiple</option>
+            <option>Other</option>
+          </select>
+      </div>
+     </div>
+    
+      <div class="form-group required" ng-class="{'has-error':myForm.accused_comp_other.$invalid && !myForm.accused_comp_other.$pristine}" ng-show="c.data.accused_comp == 'Other'" >
+        <label class="col-sm-3 control-label">${If Other}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.data.accused_comp_other" name="accused_comp_other" placeholder="${Enter if other Company}" class="form-control" ng-required="c.data.accused_comp == 'Other'" >
+        </div>
+     </div>
+      
+    <div class="form-group" >
+      <label class="col-sm-4 control-label"><b><u>${Description of Concern:}</u></b></label>
+    </div>    
+      
+      <div class="form-group required" ng-class="{'has-error':myForm.incident_location.$invalid && !myForm.incident_location.$pristine}">
+        <label class="col-sm-3 control-label">${Location of Incident}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.data.incident_location" name="incident_location" required="true" placeholder="${Enter Incident location}" class="form-control" required>
+        </div>
+      </div>
+      
+<!--      <div class="form-group">
+        <label class="col-sm-3 control-label">${Incident Date}</label>
+        <div class="col-sm-6">
+     <!--     <input type="date" ng-model="c.data.incident_date" name="incident_date" placeholder="${Enter Incident Date}" class="form-control"> 
+<!--					<input type="text" name="incident_date" placeholder="${Enter Incident Date}" >          
+          <input type="text" id="incident_date" placeholder="${Enter Incident Date}" class="form-control"> 
+        </div>
+      </div> -->
+      
+
+   <!--     <div class="form-group">
+          <label class="col-sm-3 control-label">${Incident Date2}</label>
+          <div id="datetimepicker" class="input-append date" >
+            <input data-format="dd/MM/yyyy" type="text" class="form-control">
+          </div>
+
+        </div> -->
+    
+      <div class="form-group" >
+        <label class="col-sm-3 control-label">${Relevant Date(s)}</label>
+        <div class="col-sm-6">
+          <input ng-model="c.data.incident_relvnt_dates" name="incident_relvnt_dates" placeholder="${Free text - Can Enter multiple dates}" class="form-control">
+        </div>
+     </div>
+    
+      <div class="form-group required">
+        <label class="col-sm-3 control-label">${Witnesses}</label>
+        <div class="col-sm-9">
+          <textarea ng-model="c.data.witness_names" rows = "4" name="witness_names" required placeholder="${Witnesses, or Individuals involved, or from whom Additional Information may be obtained.}" class="form-control" aria-describedby="helpBlock3"></textarea>
+				<!--	<span id="helpBlock3" style = "color:green" class="help-block">Witnesses, or Individuals involved, or from whom Additional Information may be obtained.</span> -->
+        </div>
+      </div>
+      
+      <div class="form-group required" ng-class="{'has-error':myForm.concern_details.$invalid && !myForm.concern_details.$pristine}">
+        <label class="col-sm-3  control-label">${Concern Details}</label>
+        <div class="col-sm-9">
+          <textarea class="form-control" rows="5" ng-model="c.data.concern_details" name="concern_details" required="true" placeholder="${Enter Concern details}"></textarea>
+        </div>
+        <span ng-show="myForm.concern_details.$touched && myForm.concern_details.$invalid" style="color:red">Concern Information is required.</span>
+      </div>
+<!--      <div class="g-recaptcha" data-sitekey="6Lc7UhYUAAAAADNeFxrs-oiardlf2XqzwLnBgRSV"></div> -->
+  </fieldset>
+
+  <div class="form-group">
+        <span id="helpBlock2" ng-show= "myForm.$invalid" style = "color:red" class="help-block">Fill in the mandatory fields (marked in *) before submission.</span>
+        <button type="submit" 
+                ng-disabled= "myForm.$invalid || c.disableSubmit()"
+                ng-click="c.addconcern()"
+                class="col-sm-5 btn btn-primary" aria-describedby="helpBlock2">${Submit}</button>
+        <div class="col-sm-4"></div>
+        <button ng-if="data.sys_id != '-1' && data.status == 'success'" class="col-sm-3 btn btn-primary" ng-click="c.redirect()">Create New</button> 
+   </div>
+ 		<div ng-if="data.sys_id != '-1' && data.status == 'success'" class="alert alert-success" role="alert"><strong>Success! </strong>{{data.message}}</div> 
+
+    </form>
+</div>  
+
+  <div class="panel-footer">
+    <p>FieldCore Services, Inc. is committed to confidentially and promptly handling your request.  Your concern will be assigned to an investigator for review within 24 hours of receipt, during regularly scheduled US business hours.</p>
+
+  </div>
+
+<!--  <pre>{{data|json}}</pre> -->
+</div>]]></template>
+    </sp_widget>
+</record_update>

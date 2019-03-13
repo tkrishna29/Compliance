@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Includes Shadow Text for certain views</description>
+        <field>accused_company</field>
+        <global>true</global>
+        <messages/>
+        <name>OnLoad-Integrity</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	showHideFields();
+
+function showHideFields() {
+
+	var listItems = g_form.getValue('related_policies').split(',');
+		if (listItems.indexOf("Other Policy") != -1)
+			g_form.setDisplay('related_policies_other',true);		
+		else 
+			g_form.setDisplay('related_policies_other',false);	
+
+	if(g_form.getValue('concern_status') =='Investigation In Progress' || 
+	  g_form.getValue('concern_status') == 'Additional Investigation Required') {
+		
+		g_form.setReadOnly('function',true);
+		g_form.setReadOnly('region_function',true);
+		g_form.setReadOnly('country_of_incident',true);
+		
+		u_addPlaceholderAttribute(g_form.getControl("parties_interviewed").name.toString(),"List all parties interviewed during investigation");		
+		u_addPlaceholderAttribute(g_form.getControl("list_concerns").name.toString(),"Provide details with supporting interview comments(note any discrepancies)");		
+		u_addPlaceholderAttribute(g_form.getControl("summarize_violations").name.toString(),"List related policy language and specific violation");
+		u_addPlaceholderAttribute(g_form.getControl("remediation_actions").name.toString(),"Detail proposed remediation actions including those to systems, processes and individuals");
+		u_addPlaceholderAttribute(g_form.getControl("region_approval_remediations").name.toString(),"Confirm names, date(s) and methods of Region/Function GM and Region HRM approvals for proposed remediation(For Integrity Concerns only, AIR NI or ER w/action leave blank)");	
+
+		
+		
+	}
+	else if (g_form.getValue('concern_status') == 'Remediation' ) {
+		g_form.setReadOnly('function',true);
+		g_form.setReadOnly('region_function',true);
+		g_form.setReadOnly('country_of_incident',true);
+		u_addPlaceholderAttribute(g_form.getControl("closure_details").name.toString(),"summarize completed actions to close the concern with all parties (accused & complaint)");	
+		u_addPlaceholderAttribute(g_form.getControl("compliance_policy").name.toString(),"To be typed in Manually");
+		u_addPlaceholderAttribute(g_form.getControl("summary_concern").name.toString(),"indicate concern raiser, allegation and accused");
+		u_addPlaceholderAttribute(g_form.getControl("findings").name.toString(),"Indicate remediation actions and key points");	
+		var complaint_val = g_form.getValue('sys_created_on') + " - " + g_form.getValue('incident_location');
+		g_form.setValue('complaint',complaint_val);
+/*		var listItems = g_form.getValue('related_policies').split(',');
+		if (listItems.indexOf("Other") != -1)
+			g_form.setDisplay('related_policies_other',true);		
+		else 
+			g_form.setDisplay('related_policies_other',false);	*/
+	}
+	else if (g_form.getValue('concern_status') == 'GIL Review' ) {
+		g_form.setReadOnly('function',true);
+		g_form.setReadOnly('region_function',true);
+		g_form.setReadOnly('country_of_incident',true);
+
+		var complaint_val = g_form.getValue('sys_created_on') + " - " + g_form.getValue('incident_location');
+		g_form.setValue('complaint',complaint_val);		
+		u_addPlaceholderAttribute(g_form.getControl("compliance_policy").name.toString(),"To be typed in Manually");
+		u_addPlaceholderAttribute(g_form.getControl("summary_concern").name.toString(),"indicate concern raiser, allegation and accused");
+		u_addPlaceholderAttribute(g_form.getControl("findings").name.toString(),"Indicate remediation actions and key points");
+		
+//		g_form.setReadOnly('assigned_investigator',true);
+/*		var listItems = g_form.getValue('related_policies').split(',');		
+		if (listItems.indexOf("Other") != -1)
+			g_form.setDisplay('related_policies_other',true);		
+		else 
+			g_form.setDisplay('related_policies_other',false);	*/
+	}
+	else if (g_form.getValue('concern_status') == 'Additional Closure Details' ) {
+		g_form.setReadOnly('region_function',true);
+		g_form.setReadOnly('country_of_incident',true);
+		g_form.setReadOnly('function',true);
+		g_form.setReadOnly('complaint_level',true);
+		g_form.setReadOnly('assigned_investigator',true);
+		g_form.setReadOnly('compliance_notes',true);
+
+		var complaint_val = g_form.getValue('sys_created_on') + " - " + g_form.getValue('incident_location');
+		g_form.setValue('complaint',complaint_val);
+		u_addPlaceholderAttribute(g_form.getControl("closure_details").name.toString(),"summarize completed actions to close the concern with all parties (accused & complaint)");	
+		u_addPlaceholderAttribute(g_form.getControl("compliance_policy").name.toString(),"To be typed in Manually");
+		u_addPlaceholderAttribute(g_form.getControl("summary_concern").name.toString(),"indicate concern raiser, allegation and accused");
+		u_addPlaceholderAttribute(g_form.getControl("findings").name.toString(),"Indicate remediation actions and key points");		
+/*		var listItems = g_form.getValue('related_policies').split(',');		
+		if (listItems.indexOf("Other") != -1)
+			g_form.setDisplay('related_policies_other',true);		
+		else 
+			g_form.setDisplay('related_policies_other',false);			*/
+	}
+	else if (g_form.getValue('concern_status') == 'Complete' ) {
+		g_form.setReadOnly('function',true);
+		g_form.setReadOnly('region_function',true);
+		
+		var complaint_val = g_form.getValue('sys_created_on') + " - " + g_form.getValue('incident_location');
+		g_form.setValue('complaint',complaint_val);		
+		u_addPlaceholderAttribute(g_form.getControl("closure_details").name.toString(),"summarize completed actions to close the concern with all parties (accused & complaint)");	
+		u_addPlaceholderAttribute(g_form.getControl("compliance_policy").name.toString(),"To be typed in Manually");
+		u_addPlaceholderAttribute(g_form.getControl("summary_concern").name.toString(),"indicate concern raiser, allegation and accused");
+		u_addPlaceholderAttribute(g_form.getControl("findings").name.toString(),"Indicate remediation actions and key points");				
+		
+/*		var listItems = g_form.getValue('related_policies').split(',');		
+		if (listItems.indexOf("Other") != -1)
+			g_form.setDisplay('related_policies_other',true);		
+		else 
+			g_form.setDisplay('related_policies_other',false);		*/	
+	}
+	else if (g_form.getValue('concern_status') == 'Reassign Investigator' ) {
+		g_form.setDisplay('assigned_investigator',true);
+		g_form.setReadOnly('assigned_investigator',false);
+	}
+	
+
+	if(g_form.getValue('concern_raised_through') == 'INTEGRITY') {
+	//Hide AIR fields
+		g_form.setReadOnly('concern_type',true);
+		g_form.setReadOnly('concern_type_other',true);
+		g_form.setDisplay('response_description',false);
+		g_form.setDisplay('issue_addressed',false);
+		g_form.setDisplay('air_violated_policy',false);
+		g_form.setDisplay('other_integrity_policy',false);
+		g_form.setDisplay('meeting_organizer_name',false);
+		g_form.setDisplay('meeting_hr_representative',false);	
+		g_form.setDisplay('air_reference',false);
+		g_form.removeOption('complaint_level','I');
+		g_form.removeOption('complaint_level','NI');
+		g_form.removeOption('complaint_level','ER');
+
+		if(g_form.getValue('concern_type')=='Other')
+			g_form.setDisplay('concern_type_other',true); 
+		else
+			g_form.setDisplay('concern_type_other',false); 
+
+		if(g_form.getValue('individual_company')=='Other')
+			g_form.setDisplay('individual_company_other',true); 
+		else
+			g_form.setDisplay('individual_company_other',false); 
+
+		if(g_form.getValue('accused_company')=='Other')
+			g_form.setDisplay('accused_company_other',true); 
+		else
+			g_form.setDisplay('accused_company_other',false); 
+
+		
+	}	
+	else if(g_form.getValue('concern_raised_through') == 'Annual Integrity Review') {
+		if(g_form.getValue('concern_type')=== '' || g_form.getValue('concern_type')!='Other')
+				g_form.setDisplay('concern_type_other',false); 
+		else 
+			g_form.setDisplay('concern_type_other',true); 
+
+		if(g_form.getValue('concern_status') == 'New') {
+			g_form.clearOptions('complaint_level');
+			g_form.addOption('complaint_level','I','I',0);
+			g_form.addOption('complaint_level','NI','NI',1);
+			g_form.addOption('complaint_level','ER','ER',2);
+			g_form.setReadOnly('concern_type',false);
+			g_form.setReadOnly('concern_type_other',false);
+		}
+		else {
+			g_form.setReadOnly('concern_type',true);
+			if(g_form.getValue('concern_type') != 'Other') {
+				g_form.setDisplay('concern_type_other',false);
+			}
+			else {
+				g_form.setDisplay('concern_type_other',true);
+				g_form.setReadOnly('concern_type_other',true);
+			}
+		}
+		g_form.setDisplay('individual_name',true);		
+		g_form.setDisplay('response_description',true);
+		g_form.setDisplay('issue_addressed',true);
+		g_form.setDisplay('air_violated_policy',true);
+		g_form.setDisplay('other_integrity_policy',true);
+		g_form.setDisplay('meeting_organizer_name',true);
+		g_form.setDisplay('meeting_hr_representative',true);
+		
+	//Hide Integrity Fields
+		g_form.setDisplay('concern_filler_type',false);
+		g_form.setDisplay('individual_phone',false);
+		g_form.setDisplay('individual_email',false);
+		g_form.setDisplay('individual_best_contact_time',false);
+		g_form.setDisplay('individual_company',false);
+		g_form.setDisplay('individual_company_other',false);
+		g_form.setDisplay('accused_employee',false);
+		g_form.setDisplay('accused_company',false);
+		g_form.setDisplay('accused_company_other',false);
+		g_form.setDisplay('incident_location',false);
+		g_form.setDisplay('incident_relvnt_dates',false);
+		g_form.setDisplay('concern_witnesses',false);
+	}	
+}	
+
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-01-20 18:43:10</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bee39673db94be003a22fbb9af9619ab</sys_id>
+        <sys_mod_count>131</sys_mod_count>
+        <sys_name>OnLoad-Integrity</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_script_client_bee39673db94be003a22fbb9af9619ab</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2018-08-24 14:31:03</sys_updated_on>
+        <table>x_grs_compliance_integrityconcern</table>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

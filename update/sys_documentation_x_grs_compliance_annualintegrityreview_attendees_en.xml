@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="attendees" label="Attendees" language="en" table="x_grs_compliance_annualintegrityreview">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>attendees</element>
+            <help/>
+            <hint/>
+            <label>Attendees</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <plural>Attendees</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>a1</sys_created_by>
+            <sys_created_on>2019-03-11 15:42:01</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>d9d2ae761b44fb40c72e0f22dd4bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Attendees</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_documentation_x_grs_compliance_annualintegrityreview_attendees_en</sys_update_name>
+            <sys_updated_by>a1</sys_updated_by>
+            <sys_updated_on>2019-03-11 15:42:01</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

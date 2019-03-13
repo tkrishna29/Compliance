@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="organizer_segment" table="x_grs_compliance_annualintegrityreview" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Aero</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>1</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:03:57</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5cb8baeedbf49b408a08f35aaf9619d7</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:04:51</sys_updated_on>
+            <value>Aero</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Boiler</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>2</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-01-31 18:18:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5018f697dbe4b2403a22fbb9af961936</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:04:54</sys_updated_on>
+            <value>Boiler</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>DP</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>3</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:04:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>86b8f622db389b408a08f35aaf9619e5</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:04:56</sys_updated_on>
+            <value>DP</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Energy Connections</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>4</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-01-31 18:18:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5418f697dbe4b2403a22fbb9af961936</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:04:58</sys_updated_on>
+            <value>Energy Connections</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>External</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>5</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-01-31 18:18:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5818f697dbe4b2403a22fbb9af961936</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:00</sys_updated_on>
+            <value>External</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Gas Power</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>6</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-01-31 18:18:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5c18f697dbe4b2403a22fbb9af961936</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:03</sys_updated_on>
+            <value>Gas Power</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Hydro</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>7</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:04:39</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>66d83eeedbf49b408a08f35aaf961958</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:06</sys_updated_on>
+            <value>Hydro</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>M&amp;C</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>8</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:04:32</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2fc87a22db389b408a08f35aaf96192b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:08</sys_updated_on>
+            <value>M&amp;C</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Nuclear</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>9</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:02:54</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>87287aeedbf49b408a08f35aaf9619fd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:10</sys_updated_on>
+            <value>Nuclear</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>O&amp;M</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>10</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:03:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fa78baeedbf49b408a08f35aaf9619d6</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:13</sys_updated_on>
+            <value>O&amp;M</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Oil &amp; Gas</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>11</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:03:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>85887aeedbf49b408a08f35aaf9619c6</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:15</sys_updated_on>
+            <value>Oil &amp; Gas</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other GE</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>12</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:03:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0498baeedbf49b408a08f35aaf9619d7</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:21</sys_updated_on>
+            <value>Other GE</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Power Services</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>13</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:03:38</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ad98baeedbf49b408a08f35aaf961956</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:23</sys_updated_on>
+            <value>Power Services</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Staff</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>14</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-01-31 18:18:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d818f697dbe4b2403a22fbb9af961935</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:29</sys_updated_on>
+            <value>Staff</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Water</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>15</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:04:20</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>01c83eeedbf49b408a08f35aaf961957</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:34</sys_updated_on>
+            <value>Water</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_segment</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Wind</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>16</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:03:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e5a8baeedbf49b408a08f35aaf961957</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-03-15 13:05:36</sys_updated_on>
+            <value>Wind</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>organizer_segment</element>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-01-31 18:18:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>70f46b62db43f600e0367afc0f9619e1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>organizer_segment</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_choice_x_grs_compliance_annualintegrityreview_organizer_segment</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-01-31 18:18:31</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

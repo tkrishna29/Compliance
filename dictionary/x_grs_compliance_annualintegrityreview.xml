@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="AnnualIntegrityReview" max_length="40" name="x_grs_compliance_annualintegrityreview" type="collection">
+        <element label="Attendees" max_length="4000" name="attendees" reference="x_grs_compliance_annualintegrityreview" type="glide_list"/>
+        <element default="Add in this field ONLY the attendees you were unable to find through search function at the &quot;Add Attendees&quot; link (click SAVE button to view the link) " label="Add Attendees, not found on the “Add Attendees” page:" max_length="1000" name="attendees_other" type="string_full_utf8"/>
+        <element label="Comments" max_length="1000" name="comments" type="string_full_utf8"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Function" max_length="40" name="function" type="string">
+            <choice>
+                <element label="Administrative" value="Administrative"/>
+                <element label="Communications" value="Communications"/>
+                <element label="EHS" value="EHS"/>
+                <element label="Excellence" value="Excellence"/>
+                <element label="Executive" value="Executive"/>
+                <element label="Field EE" value="Field EE"/>
+                <element label="Field Operations" value="Field Operations"/>
+                <element label="Finance" value="Finance"/>
+                <element label="Human Resources" value="Human Resources"/>
+                <element label="Info Technology" value="Info Technology"/>
+                <element label="Legal/Immigration" value="Legal/Immigration"/>
+                <element label="Operational" value="Operational"/>
+                <element label="Operations" value="Operations"/>
+                <element label="Quality" value="Quality"/>
+                <element label="Region Operations" value="Region Operations"/>
+                <element label="Resource Operations" value="Resource Operations"/>
+                <element label="Service Lines" value="Service Lines"/>
+            </choice>
+        </element>
+        <element label="Attendees List (Search by First Name)" max_length="4000" name="meeting_attendees" reference="sys_user" type="glide_list"/>
+        <element choice="1" label="Method" max_length="40" name="meeting_method" type="choice">
+            <choice>
+                <element label="Multiple Delivery Methods" sequence="0" value="Multiple Delivery Methods"/>
+                <element label="Face to Face" sequence="1" value="Face to Face"/>
+                <element label="Skype" sequence="2" value="Skype"/>
+            </choice>
+        </element>
+        <element label="Meeting Date / Time" mandatory="true" max_length="40" name="meeting_time" type="glide_date_time"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Contact No:" max_length="40" name="organizer_contact" type="string"/>
+        <element choice="1" dependent="organizer_region" dependent_on_field="organizer_region" label="Country:" max_length="40" name="organizer_country" type="choice" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Corporate Staff" label="Algeria" value="Algeria"/>
+                <element dependent_value="AIM" label="Algeria" value="Algeria"/>
+                <element dependent_value="AIM" label="Angola" value="Angola"/>
+                <element dependent_value="Corporate Staff" label="Angola" value="Angola"/>
+                <element dependent_value="LATAM" label="Argentina" value="Argentina"/>
+                <element dependent_value="Corporate Staff" label="Argentina" value="Argentina"/>
+                <element dependent_value="Asia" label="Australia" value="Australia"/>
+                <element dependent_value="Corporate Staff" label="Australia" value="Australia"/>
+                <element dependent_value="APAC" label="Australia" value="Australia"/>
+                <element dependent_value="Corporate Staff" label="Austria" value="Austria"/>
+                <element dependent_value="EU" label="Austria" value="Austria"/>
+                <element dependent_value="Corporate Staff" label="Bahrain" value="Bahrain"/>
+                <element dependent_value="AIM" label="Bahrain" value="Bahrain"/>
+                <element dependent_value="EU" label="Belgium" value="Belgium"/>
+                <element dependent_value="Corporate Staff" label="Belgium" value="Belgium"/>
+                <element dependent_value="Corporate Staff" label="Brazil" value="Brazil"/>
+                <element dependent_value="LATAM" label="Brazil" value="Brazil"/>
+                <element dependent_value="Corporate Staff" label="Canada" value="Canada"/>
+                <element dependent_value="NAM" label="Canada" value="Canada"/>
+                <element dependent_value="Corporate Staff" label="Chile" value="Chile"/>
+                <element dependent_value="LATAM" label="Chile" value="Chile"/>
+                <element dependent_value="Asia" label="China" value="China"/>
+                <element dependent_value="APAC" label="China - Beijing" value="China - Beijing"/>
+                <element dependent_value="Corporate Staff" label="China - Beijing" value="China - Beijing"/>
+                <element dependent_value="Corporate Staff" label="China - Shanghai" value="China - Shanghai"/>
+                <element dependent_value="APAC" label="China - Shanghai" value="China - Shanghai"/>
+                <element dependent_value="Corporate Staff" label="Colombia" value="Colombia"/>
+                <element dependent_value="LATAM" label="Colombia" value="Colombia"/>
+                <element dependent_value="EU" label="Croatia" value="Croatia"/>
+                <element dependent_value="Corporate Staff" label="Croatia" value="Croatia"/>
+                <element dependent_value="Corporate Staff" label="Czech Republic" value="Czech Republic"/>
+                <element dependent_value="EU" label="Czech Republic" value="Czech Republic"/>
+                <element dependent_value="EU" label="Denmark" value="Denmark"/>
+                <element dependent_value="Corporate Staff" label="Denmark" value="Denmark"/>
+                <element dependent_value="AIM" label="Egypt" value="Egypt"/>
+                <element dependent_value="Corporate Staff" label="Egypt" value="Egypt"/>
+                <element dependent_value="EU" label="Estonia" value="Estonia"/>
+                <element dependent_value="Corporate Staff" label="Estonia" value="Estonia"/>
+                <element dependent_value="Corporate Staff" label="Finland" value="Finland"/>
+                <element dependent_value="EU" label="Finland" value="Finland"/>
+                <element dependent_value="EU" label="France" value="France"/>
+                <element dependent_value="Corporate Staff" label="France" value="France"/>
+                <element dependent_value="Corporate Staff" label="Germany" value="Germany"/>
+                <element dependent_value="EU" label="Germany" value="Germany"/>
+                <element dependent_value="AIM" label="Ghana" value="Ghana"/>
+                <element dependent_value="EU" label="Greece" value="Greece"/>
+                <element dependent_value="Corporate Staff" label="Greece" value="Greece"/>
+                <element dependent_value="Asia" label="Hong Kong" value="Hong Kong"/>
+                <element dependent_value="Corporate Staff" label="Hong Kong" value="Hong Kong"/>
+                <element dependent_value="APAC" label="Hong Kong" value="Hong Kong"/>
+                <element dependent_value="Corporate Staff" label="Hungary" value="Hungary"/>
+                <element dependent_value="EU" label="Hungary" value="Hungary"/>
+                <element dependent_value="Corporate Staff" label="India" value="India"/>
+                <element dependent_value="AIM" label="India" value="India"/>
+                <element dependent_value="Asia" label="Indonesia" value="Indonesia"/>
+                <element dependent_value="APAC" label="Indonesia" value="Indonesia"/>
+                <element dependent_value="Corporate Staff" label="Indonesia" value="Indonesia"/>
+                <element dependent_value="AIM" label="Iraq" value="Iraq"/>
+                <element dependent_value="Corporate Staff" label="Iraq" value="Iraq"/>
+                <element dependent_value="AIM" label="Iraq - Kurdistan" value="Iraq - Kurdistan"/>
+                <element dependent_value="Corporate Staff" label="Ireland" value="Ireland"/>
+                <element dependent_value="EU" label="Ireland" value="Ireland"/>
+                <element dependent_value="Corporate Staff" label="Israel" value="Israel"/>
+                <element dependent_value="EU" label="Israel" value="Israel"/>
+                <element dependent_value="Corporate Staff" label="Italy" value="Italy"/>
+                <element dependent_value="EU" label="Italy" value="Italy"/>
+                <element dependent_value="Corporate Staff" label="Japan" value="Japan"/>
+                <element dependent_value="APAC" label="Japan" value="Japan"/>
+                <element dependent_value="Asia" label="Japan" value="Japan"/>
+                <element dependent_value="EU" label="Kazakhstan" value="Kazakhstan"/>
+                <element dependent_value="Corporate Staff" label="Kazakhstan" value="Kazakhstan"/>
+                <element dependent_value="Corporate Staff" label="Korea" value="Korea"/>
+                <element dependent_value="APAC" label="Korea" value="Korea"/>
+                <element dependent_value="Asia" label="Korea" value="Korea"/>
+                <element dependent_value="Corporate Staff" label="Kuwait" value="Kuwait"/>
+                <element dependent_value="AIM" label="Kuwait" value="Kuwait"/>
+                <element dependent_value="Corporate Staff" label="Lebanon" value="Lebanon"/>
+                <element dependent_value="AIM" label="Lebanon" value="Lebanon"/>
+                <element dependent_value="APAC" label="Malaysia" value="Malaysia"/>
+                <element dependent_value="Asia" label="Malaysia" value="Malaysia"/>
+                <element dependent_value="Corporate Staff" label="Malaysia" value="Malaysia"/>
+                <element dependent_value="LATAM" label="Mexico" value="Mexico"/>
+                <element dependent_value="Corporate Staff" label="Mexico" value="Mexico"/>
+                <element dependent_value="Corporate Staff" label="Morocco" value="Morocco"/>
+                <element dependent_value="AIM" label="Morocco" value="Morocco"/>
+                <element dependent_value="APAC" label="Myanmar" value="Myanmar"/>
+                <element dependent_value="Corporate Staff" label="Netherlands" value="Netherlands"/>
+                <element dependent_value="EU" label="Netherlands" value="Netherlands"/>
+                <element dependent_value="APAC" label="New Zealand" value="New Zealand"/>
+                <element dependent_value="Corporate Staff" label="New Zealand" value="New Zealand"/>
+                <element dependent_value="Asia" label="New Zealand" value="New Zealand"/>
+                <element dependent_value="Corporate Staff" label="Nigeria" value="Nigeria"/>
+                <element dependent_value="AIM" label="Nigeria" value="Nigeria"/>
+                <element dependent_value="Corporate Staff" label="Norway" value="Norway"/>
+                <element dependent_value="EU" label="Norway" value="Norway"/>
+                <element dependent_value="AIM" label="Oman" value="Oman"/>
+                <element dependent_value="Corporate Staff" label="Oman" value="Oman"/>
+                <element dependent_value="Corporate Staff" label="Pakistan" value="Pakistan"/>
+                <element dependent_value="AIM" label="Pakistan" value="Pakistan"/>
+                <element dependent_value="LATAM" label="Peru" value="Peru"/>
+                <element dependent_value="Corporate Staff" label="Peru" value="Peru"/>
+                <element dependent_value="Corporate Staff" label="Philippines" value="Philippines"/>
+                <element dependent_value="APAC" label="Philippines" value="Philippines"/>
+                <element dependent_value="Asia" label="Philippines" value="Philippines"/>
+                <element dependent_value="EU" label="Poland" value="Poland"/>
+                <element dependent_value="Corporate Staff" label="Poland" value="Poland"/>
+                <element dependent_value="Corporate Staff" label="Portugal" value="Portugal"/>
+                <element dependent_value="EU" label="Portugal" value="Portugal"/>
+                <element dependent_value="AIM" label="Qatar" value="Qatar"/>
+                <element dependent_value="Corporate Staff" label="Qatar" value="Qatar"/>
+                <element dependent_value="Corporate Staff" label="Romania" value="Romania"/>
+                <element dependent_value="EU" label="Romania" value="Romania"/>
+                <element dependent_value="EU" label="Russia" value="Russia"/>
+                <element dependent_value="Corporate Staff" label="Russia" value="Russia"/>
+                <element dependent_value="Corporate Staff" label="Russia - Sakhalin" value="Russia - Sakhalin"/>
+                <element dependent_value="EU" label="Russia - Sakhalin" value="Russia - Sakhalin"/>
+                <element dependent_value="AIM" label="Saudi Arabia" value="Saudi Arabia"/>
+                <element dependent_value="Corporate Staff" label="Saudi Arabia" value="Saudi Arabia"/>
+                <element dependent_value="APAC" label="Singapore" value="Singapore"/>
+                <element dependent_value="Asia" label="Singapore" value="Singapore"/>
+                <element dependent_value="Corporate Staff" label="Singapore" value="Singapore"/>
+                <element dependent_value="Corporate Staff" label="South Africa" value="South Africa"/>
+                <element dependent_value="AIM" label="South Africa" value="South Africa"/>
+                <element dependent_value="EU" label="Spain" value="Spain"/>
+                <element dependent_value="Corporate Staff" label="Spain" value="Spain"/>
+                <element dependent_value="EU" label="Sweden" value="Sweden"/>
+                <element dependent_value="Corporate Staff" label="Sweden" value="Sweden"/>
+                <element dependent_value="EU" label="Switzerland" value="Switzerland"/>
+                <element dependent_value="Corporate Staff" label="Switzerland" value="Switzerland"/>
+                <element dependent_value="Corporate Staff" label="Taiwan" value="Taiwan"/>
+                <element dependent_value="Asia" label="Taiwan" value="Taiwan"/>
+                <element dependent_value="APAC" label="Taiwan" value="Taiwan"/>
+                <element dependent_value="Asia" label="Thailand" value="Thailand"/>
+                <element dependent_value="Corporate Staff" label="Thailand" value="Thailand"/>
+                <element dependent_value="APAC" label="Thailand" value="Thailand"/>
+                <element dependent_value="LATAM" label="Trinidad &amp; Tobago" value="Trinidad &amp; Tobago"/>
+                <element dependent_value="Corporate Staff" label="Trinidad &amp; Tobago" value="Trinidad &amp; Tobago"/>
+                <element dependent_value="Corporate Staff" label="Tunisia" value="Tunisia"/>
+                <element dependent_value="AIM" label="Tunisia" value="Tunisia"/>
+                <element dependent_value="Corporate Staff" label="Turkey" value="Turkey"/>
+                <element dependent_value="EU" label="Turkey" value="Turkey"/>
+                <element dependent_value="AIM" label="UAE - Abu Dhabi" value="UAE - Abu Dhabi"/>
+                <element dependent_value="Corporate Staff" label="UAE - Abu Dhabi" value="UAE - Abu Dhabi"/>
+                <element dependent_value="Corporate Staff" label="UAE - Jafza" value="UAE - Jafza"/>
+                <element dependent_value="AIM" label="UAE - Jafza" value="UAE - Jafza"/>
+                <element dependent_value="EU" label="UK" value="UK"/>
+                <element dependent_value="Corporate Staff" label="UK" value="UK"/>
+                <element dependent_value="NAM" label="US" value="US"/>
+                <element dependent_value="Corporate Staff" label="US" value="US"/>
+                <element dependent_value="NAM" label="US-Craft" value="US-Craft"/>
+                <element dependent_value="Corporate Staff" label="Venezuela" value="Venezuela"/>
+                <element dependent_value="LATAM" label="Venezuela" value="Venezuela"/>
+                <element dependent_value="Corporate Staff" label="Vietnam" value="Vietnam"/>
+                <element dependent_value="Asia" label="VietNam" value="VietNam"/>
+                <element dependent_value="APAC" label="Vietnam" value="Vietnam"/>
+            </choice>
+        </element>
+        <element label="HR Representative:" max_length="40" name="organizer_hr" reference="sys_user" type="reference"/>
+        <element label="Reports To:" max_length="32" name="organizer_manager" reference="sys_user" type="reference"/>
+        <element label="Reports To:(Title)" max_length="30" name="organizer_manager_title" type="string"/>
+        <element label="Meeting Organizer Name:" max_length="100" name="organizer_name" reference="sys_user" type="reference"/>
+        <element choice="1" label="Region:" max_length="40" name="organizer_region" type="choice">
+            <choice>
+                <element label="AIM" sequence="10" value="AIM"/>
+                <element label="Asia" sequence="20" value="Asia"/>
+                <element label="Europe" sequence="30" value="EU"/>
+                <element label="Latin America" sequence="40" value="LATAM"/>
+                <element label="North America" sequence="50" value="NAM"/>
+                <element label="Corporate Staff" sequence="60" value="Corporate Staff"/>
+            </choice>
+        </element>
+        <element choice="1" label="Segment:" max_length="40" name="organizer_segment" type="choice">
+            <choice>
+                <element label="Aero" sequence="1" value="Aero"/>
+                <element label="Boiler" sequence="2" value="Boiler"/>
+                <element label="DP" sequence="3" value="DP"/>
+                <element label="Energy Connections" sequence="4" value="Energy Connections"/>
+                <element label="External" sequence="5" value="External"/>
+                <element label="Gas Power" sequence="6" value="Gas Power"/>
+                <element label="Hydro" sequence="7" value="Hydro"/>
+                <element label="M&amp;C" sequence="8" value="M&amp;C"/>
+                <element label="Nuclear" sequence="9" value="Nuclear"/>
+                <element label="O&amp;M" sequence="10" value="O&amp;M"/>
+                <element label="Oil &amp; Gas" sequence="11" value="Oil &amp; Gas"/>
+                <element label="Other GE" sequence="12" value="Other GE"/>
+                <element label="Power Services" sequence="13" value="Power Services"/>
+                <element label="Staff" sequence="14" value="Staff"/>
+                <element label="Water" sequence="15" value="Water"/>
+                <element label="Wind" sequence="16" value="Wind"/>
+            </choice>
+        </element>
+        <element label="Position/Title:" max_length="40" name="organizer_title" type="string"/>
+        <element label="Response Description" max_length="2000" name="response_description" type="string_full_utf8"/>
+        <element default="javascript:current.getTableName();" dynamic_default_value="b5cb83a85f220100a9ad2572f2b4773c" label="Class" max_length="80" name="sys_class_name" type="sys_class_name" use_dynamic_default="true"/>
+        <element label="Meeting Manager" mandatory="true" max_length="32" name="u_manager" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="In Progress" label="Meeting State" max_length="40" name="u_meeting_state" type="string">
+            <choice>
+                <element label="In Progress" sequence="0" value="In Progress"/>
+                <element label="Complete" sequence="1" value="Complete"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="organizer_manager"/>
+        </index>
+        <index name="index2">
+            <element name="organizer_hr"/>
+        </index>
+        <index name="index3">
+            <element name="organizer_name"/>
+        </index>
+        <index name="index4">
+            <element name="u_manager"/>
+        </index>
+    </element>
+</database>

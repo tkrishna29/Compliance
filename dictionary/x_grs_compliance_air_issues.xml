@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Raised Concerns/Questions" max_length="40" name="x_grs_compliance_air_issues" type="collection">
+        <element label="AIR Reference#:" max_length="32" name="air_form" read_only="true" reference="x_grs_compliance_annualintegrityreview" type="reference"/>
+        <element hint="Summary of Question / Discussion or Concern Raised. Include  Location, Relevant Dates,  Witnesses if possible." label="Question, Concern or Discussion" mandatory="true" max_length="2000" name="concern_description" type="string_full_utf8"/>
+        <element label="Employee Raising the Concern" mandatory="true" max_length="100" name="concern_raised_by" reference="sys_user" type="string"/>
+        <element label="Employee Email" max_length="40" name="concern_raised_email" type="string"/>
+        <element choice="3" label="Integrity Policy_archive" mandatory="true" max_length="1000" name="integrity_policy" type="choice">
+            <choice>
+                <element label="Complying with Comp Laws" sequence="0" value="Complying with Comp Laws"/>
+                <element label="Conflicts of Interest" sequence="1" value="Conflicts of Interest"/>
+                <element label="Controllership" sequence="2" value="Controllership"/>
+                <element label="Environment Health &amp; Safety" sequence="3" value="Environment Health &amp; Safety"/>
+                <element label="Fair Employment Practices" sequence="4" value="Fair Employment Practices"/>
+                <element label="Improper Payments" sequence="5" value="Improper Payments"/>
+                <element label="Insider Trading &amp; Stock Tipping" sequence="6" value="Insider Trading &amp; Stock Tipping"/>
+                <element label="Intellectual Property" sequence="7" value="Intellectual Property"/>
+                <element label="International Trade Controls" sequence="8" value="International Trade Controls"/>
+                <element label="Money Laundering Prevention" sequence="9" value="Money Laundering Prevention"/>
+                <element label="Privacy" sequence="10" value="Privacy"/>
+                <element label="Regulatory Excellence" sequence="11" value="Regulatory Excellence"/>
+                <element label="Security &amp; Crisis Management" sequence="12" value="Security &amp; Crisis Management"/>
+                <element label="Supplier Relationships" sequence="13" value="Supplier Relationships"/>
+                <element label="Working with Governments" sequence="14" value="Working with Governments"/>
+            </choice>
+        </element>
+        <element choice="1" label="Integrity Policy" mandatory="true" max_length="4000" name="integrity_policy2" type="choice">
+            <choice>
+                <element label="Complying with Comp Laws" sequence="0" value="Complying with Comp Laws"/>
+                <element label="Conflicts of Interest" sequence="1" value="Conflicts of Interest"/>
+                <element label="Controllership" sequence="2" value="Controllership"/>
+                <element label="Environment Health &amp; Safety" sequence="3" value="Environment Health &amp; Safety"/>
+                <element label="Fair Employment Practices" sequence="4" value="Fair Employment Practices"/>
+                <element label="Improper Payments" sequence="5" value="Improper Payments"/>
+                <element label="Insider Trading &amp; Stock Tipping" sequence="6" value="Insider Trading &amp; Stock Tipping"/>
+                <element label="Intellectual Property" sequence="7" value="Intellectual Property"/>
+                <element label="International Trade Controls" sequence="8" value="International Trade Controls"/>
+                <element label="Money Laundering Prevention" sequence="9" value="Money Laundering Prevention"/>
+                <element label="Non-S&amp;L Policy" sequence="10" value="Non-S&amp;L Policy"/>
+                <element label="Privacy" sequence="12" value="Privacy"/>
+                <element label="Regulatory Excellence" sequence="13" value="Regulatory Excellence"/>
+                <element label="Security &amp; Crisis Management" sequence="14" value="Security &amp; Crisis Management"/>
+                <element label="Supplier Relationships" sequence="15" value="Supplier Relationships"/>
+                <element label="Working with Governments" sequence="16" value="Working with Governments"/>
+                <element label="Other" sequence="99" value="Other"/>
+            </choice>
+        </element>
+        <element choice="1" label="Issue Addressed in Meeting?" mandatory="true" max_length="40" name="issue_addressed" type="choice">
+            <choice>
+                <element label="Yes" sequence="0" value="Yes"/>
+                <element label="No" sequence="1" value="No"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Reference#:" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Region/Country" max_length="32" name="organizer_hr" read_only="true" type="string"/>
+        <element label="If selected &quot;Other&quot; from the Policy list" max_length="40" name="other_integrity_policy" type="string"/>
+        <element hint="Summary of Response provided during meeting" label="Response Description" mandatory="true" max_length="2000" name="response_description" type="string_full_utf8"/>
+        <element label="Summary of Response provided during meeting" max_length="65536" name="u_html_3" type="html"/>
+        <index name="index">
+            <element name="air_form"/>
+        </index>
+    </element>
+</database>

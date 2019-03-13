@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="sysevent_email_action" relationship="df364130c3110100bac1addbdfba8f78" sys_domain="global" table="sys_update_xml" version="2" view="advanced">
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>sys_update_xml</name>
+            <parent>sysevent_email_action</parent>
+            <position/>
+            <relationship display_value="Updates">df364130c3110100bac1addbdfba8f78</relationship>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-06-05 15:01:43</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b7b9bd27dbcb3a00e0367afc0f9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_update_xml</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_ui_list_sysevent_email_action_df364130c3110100bac1addbdfba8f78_advanced</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-06-05 15:01:43</sys_updated_on>
+            <sys_user display_value="Krishna Chaitanya">1f919424dba926009fb3f2f9af96195f</sys_user>
+            <view display_value="Advanced" name="advanced">7966be310a0a0b8c00bd504090503227</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

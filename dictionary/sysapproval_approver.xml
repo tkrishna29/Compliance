@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Approval" max_length="40" name="sysapproval_approver" sizeclass="5126" type="collection">
+        <element attributes="no_truncate=&quot;true&quot;" label="Notes" max_length="5000" name="x_grs_compliance_notes" read_only="true" type="string_full_utf8"/>
+    </element>
+</database>

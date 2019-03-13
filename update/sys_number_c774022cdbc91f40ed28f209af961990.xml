@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_grs_compliance_air_attendees">x_grs_compliance_air_attendees</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>AIRA</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2018-03-21 14:23:34</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c774022cdbc91f40ed28f209af961990</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AIRA</sys_name>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_number_c774022cdbc91f40ed28f209af961990</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2018-03-21 14:23:34</sys_updated_on>
+    </sys_number>
+</record_update>

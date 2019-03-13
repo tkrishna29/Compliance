@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="role" table="x_grs_compliance_investigation_details" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Accused</label>
+            <language>en</language>
+            <name>x_grs_compliance_investigation_details</name>
+            <sequence>0</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-17 21:00:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e3d5f273dbc2b20067b8f2f9af961974</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-17 21:27:28</sys_updated_on>
+            <value>Accused</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Choice 1</label>
+            <language>en</language>
+            <name>x_grs_compliance_investigation_details</name>
+            <sequence>0</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-17 21:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4ecb7237dbc2b20067b8f2f9af961942</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-17 21:27:28</sys_updated_on>
+            <value>Choice 1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Choice 2</label>
+            <language>en</language>
+            <name>x_grs_compliance_investigation_details</name>
+            <sequence>1</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-17 21:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>42cb7237dbc2b20067b8f2f9af961943</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-17 21:27:28</sys_updated_on>
+            <value>Choice 2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Complainant</label>
+            <language>en</language>
+            <name>x_grs_compliance_investigation_details</name>
+            <sequence>1</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-17 21:00:53</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>5df5f273dbc2b20067b8f2f9af961979</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-17 21:27:28</sys_updated_on>
+            <value>Complainant</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Choice 3</label>
+            <language>en</language>
+            <name>x_grs_compliance_investigation_details</name>
+            <sequence>2</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-17 21:25:55</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>46cb7237dbc2b20067b8f2f9af961943</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-17 21:27:28</sys_updated_on>
+            <value>Choice 3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>role</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Witness</label>
+            <language>en</language>
+            <name>x_grs_compliance_investigation_details</name>
+            <sequence>2</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-17 21:01:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ab063e73dbc2b20067b8f2f9af9619ab</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-17 21:27:28</sys_updated_on>
+            <value>Witness</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>role</element>
+            <name>x_grs_compliance_investigation_details</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-17 20:59:57</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>05f4ab62db43f600e0367afc0f961966</sys_id>
+            <sys_mod_count>16</sys_mod_count>
+            <sys_name>role</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_choice_x_grs_compliance_investigation_details_role</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-17 21:27:28</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

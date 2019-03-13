@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_form_sections form_id="c12d0d2edb1e36003a22fbb9af9619af" sys_domain="global" table="x_grs_compliance_integrityconcern" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-26 02:25:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>492d0d2edb1e36003a22fbb9af9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_grs_compliance_integrityconcern" name="x_grs_compliance_integrityconcern" sys_domain="global" view="492d0d2edb1e36003a22fbb9af9619ad">c12d0d2edb1e36003a22fbb9af9619af</sys_ui_form>
+            <sys_ui_section caption="Recording of Complaint" display_value="Recording of Complaint" name="x_grs_compliance_integrityconcern" sys_domain="global" view="492d0d2edb1e36003a22fbb9af9619ad">c12d0d2edb1e36003a22fbb9af9619ae</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-26 02:25:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-26 02:25:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c92d0d2edb1e36003a22fbb9af9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_grs_compliance_integrityconcern" name="x_grs_compliance_integrityconcern" sys_domain="global" view="492d0d2edb1e36003a22fbb9af9619ad">c12d0d2edb1e36003a22fbb9af9619af</sys_ui_form>
+            <sys_ui_section caption="Concern Information" display_value="Concern Information" name="x_grs_compliance_integrityconcern" sys_domain="global" view="492d0d2edb1e36003a22fbb9af9619ad">092d0d2edb1e36003a22fbb9af9619ae</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-26 02:25:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-26 02:25:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8d2d0d2edb1e36003a22fbb9af9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_grs_compliance_integrityconcern" name="x_grs_compliance_integrityconcern" sys_domain="global" view="492d0d2edb1e36003a22fbb9af9619ad">c12d0d2edb1e36003a22fbb9af9619af</sys_ui_form>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="492d0d2edb1e36003a22fbb9af9619ad">4d2d0d2edb1e36003a22fbb9af9619ae</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-26 02:25:48</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_grs_compliance_integrityconcern</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-04-26 02:25:48</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c12d0d2edb1e36003a22fbb9af9619af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_grs_compliance_integrityconcern</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_ui_form_sections_c12d0d2edb1e36003a22fbb9af9619af</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-26 02:25:48</sys_updated_on>
+            <sys_user/>
+            <view display_value="AIR Under Investigation" name="AIR_Under_Investigation">492d0d2edb1e36003a22fbb9af9619ad</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

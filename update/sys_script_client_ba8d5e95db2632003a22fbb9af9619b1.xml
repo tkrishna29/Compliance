@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Add Shadow Text for fields on form Load</description>
+        <field>air_form</field>
+        <global>true</global>
+        <messages/>
+        <name>OnLoad-AIR Issues</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+  //Disable attachments paper clip icon on Investigator Details
+	g_form.disableAttachments();
+  
+//	u_addPlaceholderAttribute(g_form.getControl("concern_raised_by").name.toString(),"Active directory or anonymous");
+	u_addPlaceholderAttribute(g_form.getControl("other_integrity_policy").name.toString(),"Enter policy name  if OTHER");
+	u_addPlaceholderAttribute(g_form.getControl("concern_description").name.toString(),"Provide details of question, concern or discussion topic");
+	u_addPlaceholderAttribute(g_form.getControl("response_description").name.toString(),"provide details of response provided during meeting");	
+
+if(g_form.getValue('organizer_name') == '')
+g_form.showFieldMsg('integrity_policy','(Click lock to select policy)');
+else
+	g_form.hideFieldMsg('integrity_policy');
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-05-04 21:20:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ba8d5e95db2632003a22fbb9af9619b1</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>OnLoad-AIR Issues</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_script_client_ba8d5e95db2632003a22fbb9af9619b1</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2017-05-17 19:56:25</sys_updated_on>
+        <table>x_grs_compliance_air_issues</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

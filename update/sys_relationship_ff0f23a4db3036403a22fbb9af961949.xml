@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_relationship">
+    <sys_relationship action="INSERT_OR_UPDATE">
+        <advanced>false</advanced>
+        <apply_to/>
+        <basic_apply_to>x_grs_compliance_annualintegrityreview</basic_apply_to>
+        <basic_query_from>x_grs_compliance_air_issues</basic_query_from>
+        <insert_callback/>
+        <name>MapIntegritytoIssues</name>
+        <query_from/>
+        <query_with><![CDATA[(function refineQuery(current, parent) {
+
+	// Add your code here, such as current.addQuery(field, value);
+	current.addQuery(air_form,parent.sys_id);
+
+		
+
+})(current, parent);]]></query_with>
+        <reference_field>air_form</reference_field>
+        <related_list/>
+        <simple_reference>false</simple_reference>
+        <sys_class_name>sys_relationship</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-02-04 19:34:09</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>ff0f23a4db3036403a22fbb9af961949</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>MapIntegritytoIssues</sys_name>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_relationship_ff0f23a4db3036403a22fbb9af961949</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2017-04-24 02:35:43</sys_updated_on>
+    </sys_relationship>
+    <sys_translated_text action="delete_multiple" query="documentkey=ff0f23a4db3036403a22fbb9af961949"/>
+</record_update>

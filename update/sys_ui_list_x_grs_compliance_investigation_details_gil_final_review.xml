@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_grs_compliance_investigation_details" version="2" view="gil_final_review">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>number</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>1d017995dbe232003a22fbb9af961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>interview_date</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>9d017995dbe232003a22fbb9af961943</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>full_name</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>11017995dbe232003a22fbb9af961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>role</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>91017995dbe232003a22fbb9af961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>contact_details</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>15017995dbe232003a22fbb9af961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>company</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>95017995dbe232003a22fbb9af961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>desired_outcome</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>19017995dbe232003a22fbb9af961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>interview_details</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>99017995dbe232003a22fbb9af961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>interview_location</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>1d017995dbe232003a22fbb9af961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>additional_witnesses</element>
+            <list_id display_value="x_grs_compliance_investigation_details" element="NULL" name="x_grs_compliance_investigation_details" parent="NULL" relationship="NULL" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">4c7d359edb9e360018487bec0f9619d3</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_id>9d017995dbe232003a22fbb9af961944</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_grs_compliance_investigation_details</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:05:52</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4c7d359edb9e360018487bec0f9619d3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_grs_compliance_investigation_details</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_ui_list_x_grs_compliance_investigation_details_gil_final_review</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:05:52</sys_updated_on>
+            <sys_user/>
+            <view display_value="GIL Final Review" name="gil_final_review">af6aad12dbdd7a003a22fbb9af961949</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

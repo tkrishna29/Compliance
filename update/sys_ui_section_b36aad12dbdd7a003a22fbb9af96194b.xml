@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="Investigation Summary" section_id="b36aad12dbdd7a003a22fbb9af96194b" sys_domain="global" table="x_grs_compliance_integrityconcern" version="3" view="gil_final_review">
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>dc1c30a2db446300ed28f209af9619a9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <text>&lt;b&gt;Instruction: Summarize Investigation details below. Preserve all notes and documents and include in the Investigation Details Tab&lt;/b&gt;</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_annotation action="INSERT_OR_UPDATE">
+            <is_plain_text>false</is_plain_text>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>d01c30a2db446300ed28f209af9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <text>INTEGRITY CONCERNS - REMEDIATION ACTIONS MUST BE APPROVED BY THE GLOBAL INTEGRITY LEADER PRIOR TO TAKING ACTION</text>
+            <type display_value="Info Box Blue">753f88a80f930000b12e6903cfe01206</type>
+        </sys_ui_annotation>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>dc1c30a2db446300ed28f209af9619a9</element>
+            <position>0</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>941c30a2db446300ed28f209af9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">b36aad12dbdd7a003a22fbb9af96194b</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parties_interviewed</element>
+            <position>1</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>181c30a2db446300ed28f209af9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">b36aad12dbdd7a003a22fbb9af96194b</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>list_concerns</element>
+            <position>2</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>981c30a2db446300ed28f209af9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">b36aad12dbdd7a003a22fbb9af96194b</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>related_policies</element>
+            <position>3</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>1c1c30a2db446300ed28f209af9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">b36aad12dbdd7a003a22fbb9af96194b</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>related_policies_other</element>
+            <position>4</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>9c1c30a2db446300ed28f209af9619aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">b36aad12dbdd7a003a22fbb9af96194b</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>summarize_violations</element>
+            <position>5</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>101c30a2db446300ed28f209af9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">b36aad12dbdd7a003a22fbb9af96194b</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>remediation_actions</element>
+            <position>6</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>901c30a2db446300ed28f209af9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">b36aad12dbdd7a003a22fbb9af96194b</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>region_approval_remediations</element>
+            <position>7</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>141c30a2db446300ed28f209af9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">b36aad12dbdd7a003a22fbb9af96194b</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>d01c30a2db446300ed28f209af9619aa</element>
+            <position>8</position>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-08-23 17:23:24</sys_created_on>
+            <sys_id>941c30a2db446300ed28f209af9619ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Investigation Summary" display_value="Investigation Summary" name="x_grs_compliance_integrityconcern" sys_domain="global" view="af6aad12dbdd7a003a22fbb9af961949">b36aad12dbdd7a003a22fbb9af96194b</sys_ui_section>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2018-08-23 17:23:24</sys_updated_on>
+            <sys_user/>
+            <type>annotation</type>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Investigation Summary</caption>
+            <header>false</header>
+            <name>x_grs_compliance_integrityconcern</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-03-06 16:52:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b36aad12dbdd7a003a22fbb9af96194b</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Investigation Summary</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_ui_section_b36aad12dbdd7a003a22fbb9af96194b</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-04-17 22:40:20</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="GIL Final Review" name="gil_final_review">af6aad12dbdd7a003a22fbb9af961949</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="organizer_region" table="x_grs_compliance_annualintegrityreview" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_region</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>APAC</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence/>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:53:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c6bb3999dbe232003a22fbb9af9619bc</sys_id>
+            <sys_mod_count>4</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:32:55</sys_updated_on>
+            <value>APAC</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>AIM</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>10</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:54:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>0b0cbd99dbe232003a22fbb9af961911</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:33:14</sys_updated_on>
+            <value>AIM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Asia</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>20</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2019-02-15 15:32:16</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c25ab6831be32b009ce70dc2cd4bcb41</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:33:22</sys_updated_on>
+            <value>Asia</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Europe</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>30</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:53:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>17eb3999dbe232003a22fbb9af9619bd</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:33:30</sys_updated_on>
+            <value>EU</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Latin America</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>40</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:54:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c3fb7d99dbe232003a22fbb9af961960</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:33:35</sys_updated_on>
+            <value>LATAM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>North America</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>50</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:54:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>551c31d9dbe232003a22fbb9af961953</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:33:38</sys_updated_on>
+            <value>NAM</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>organizer_region</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Corporate Staff</label>
+            <language>en</language>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sequence>60</sequence>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2018-03-15 13:01:08</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8fc6f2eadbf49b408a08f35aaf961907</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2019-02-15 15:33:43</sys_updated_on>
+            <value>Corporate Staff</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>organizer_region</element>
+            <name>x_grs_compliance_annualintegrityreview</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>Krishna.Chaitanya</sys_created_by>
+            <sys_created_on>2017-05-04 18:53:31</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>ad0d2f2edb43f600e0367afc0f9619a8</sys_id>
+            <sys_mod_count>9</sys_mod_count>
+            <sys_name>organizer_region</sys_name>
+            <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+            <sys_update_name>sys_choice_x_grs_compliance_annualintegrityreview_organizer_region</sys_update_name>
+            <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+            <sys_updated_on>2017-05-04 18:54:31</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

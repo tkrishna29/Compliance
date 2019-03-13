@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>false</copy_empty_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>IntegrityConcern Legacy Data</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_grs_compliance_integrityconcern_legacy_data</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-06-08 15:54:47</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>2a8265acdb93fa003a22fbb9af9619ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>IntegrityConcern Legacy Data</sys_name>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_transform_map_2a8265acdb93fa003a22fbb9af9619ca</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2017-06-08 15:54:47</sys_updated_on>
+        <target_table>x_grs_compliance_integrityconcern</target_table>
+    </sys_transform_map>
+</record_update>

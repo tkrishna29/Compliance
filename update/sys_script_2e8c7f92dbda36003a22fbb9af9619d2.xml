@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>false</action_insert>
+        <action_query>true</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_grs_compliance_integrityconcern</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>RestrictIntegrityDataView</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/) {
+var qc,u;
+var add_regions = "";
+if(gs.hasRole("x_grs_compliance.Director") && gs.isInteractive()) {
+//Returns all records.No restrictions
+} 	
+else { 
+	if (gs.hasRole("x_grs_compliance.Staff IT") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'staff_it';
+	}
+	if (gs.hasRole("x_grs_compliance.AIM") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'AIM';
+	}
+	if (gs.hasRole("x_grs_compliance.Asia") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'Asia';
+	}
+	if (gs.hasRole("x_grs_compliance.DP") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'DP';
+	}
+	if (gs.hasRole("x_grs_compliance.EU") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'EU';
+	}
+	 if (gs.hasRole("x_grs_compliance.LA") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'LA';
+	}
+	 if (gs.hasRole("x_grs_compliance.NA") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'NA';
+	}
+	 if (gs.hasRole("x_grs_compliance.OtherRegions") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'Other';
+	}
+	 if (gs.hasRole("x_grs_compliance.Staff EHS") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'staff_ehs';
+	}
+	 if (gs.hasRole("x_grs_compliance.Staff Finance") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'staff_finance';
+	}
+	 if (gs.hasRole("x_grs_compliance.Staff SO") && gs.isInteractive()) {
+	//Restricts records to the IT region
+		add_regions = add_regions + "," + 'staff_so';
+	}
+//	gs.info("Krishna Regions added " + add_regions);
+		qc = current.addQuery('region_function','IN',add_regions);
+}
+if(gs.hasRole("x_grs_compliance.Investigator")) { //Restricts records that were opened by Investigators
+		u = gs.getUserID();
+		qc.addOrCondition("assigned_investigator", u);
+//		qc = current.addQuery("assigned_investigator", u);
+}
+if(gs.hasRole("admin")){
+		u = gs.getUserID();
+//		qc = current.addQuery("assigned_investigator", u);
+		qc.addOrCondition("assigned_investigator", u);
+}
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-04-25 20:34:20</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>2e8c7f92dbda36003a22fbb9af9619d2</sys_id>
+        <sys_mod_count>20</sys_mod_count>
+        <sys_name>RestrictIntegrityDataView</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sys_script_2e8c7f92dbda36003a22fbb9af9619d2</sys_update_name>
+        <sys_updated_by>ashok.kumar</sys_updated_by>
+        <sys_updated_on>2019-02-01 16:56:56</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=2e8c7f92dbda36003a22fbb9af9619d2"/>
+</record_update>

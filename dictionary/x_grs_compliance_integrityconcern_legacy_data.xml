@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="Integrityconcern legacy data" max_length="40" name="x_grs_compliance_integrityconcern_legacy_data" type="collection">
+        <element attributes="import_attribute_name=Accused Company,edge_encryption_enabled=true" label="Accused Company" max_length="40" name="u_accused_company" type="string"/>
+        <element attributes="import_attribute_name=Accused Company Other,edge_encryption_enabled=true" label="Accused Company Other" max_length="40" name="u_accused_company_other" type="string"/>
+        <element attributes="import_attribute_name=Accused Name(s),edge_encryption_enabled=true" label="Accused Name(s)" max_length="60" name="u_accused_name_s_" type="string"/>
+        <element attributes="import_attribute_name=Active,edge_encryption_enabled=true" label="Active" max_length="40" name="u_active" type="string"/>
+        <element attributes="import_attribute_name=Actual end,edge_encryption_enabled=true" label="Actual end" max_length="40" name="u_actual_end" type="string"/>
+        <element attributes="import_attribute_name=Actual start,edge_encryption_enabled=true" label="Actual start" max_length="40" name="u_actual_start" type="string"/>
+        <element attributes="import_attribute_name=AII Reference,edge_encryption_enabled=true" label="AII Reference" max_length="40" name="u_aii_reference" type="string"/>
+        <element attributes="import_attribute_name=Approval,edge_encryption_enabled=true" label="Approval" max_length="40" name="u_approval" type="string"/>
+        <element attributes="import_attribute_name=Approval set,edge_encryption_enabled=true" label="Approval set" max_length="40" name="u_approval_set" type="string"/>
+        <element attributes="import_attribute_name=Assigned Investigator,edge_encryption_enabled=true" label="Assigned Investigator" max_length="40" name="u_assigned_investigator" type="string"/>
+        <element attributes="import_attribute_name=Assigned Investigator (R),edge_encryption_enabled=true" label="Assigned Investigator (R)" max_length="40" name="u_assigned_investigator__r_" type="string"/>
+        <element attributes="import_attribute_name=Assignment group,edge_encryption_enabled=true" label="Assignment group" max_length="40" name="u_assignment_group" type="string"/>
+        <element attributes="import_attribute_name=Business service,edge_encryption_enabled=true" label="Business service" max_length="40" name="u_business_service" type="string"/>
+        <element attributes="import_attribute_name=Closed,edge_encryption_enabled=true" label="Closed" max_length="40" name="u_closed" type="string"/>
+        <element attributes="import_attribute_name=Closed by,edge_encryption_enabled=true" label="Closed by" max_length="40" name="u_closed_by" type="string"/>
+        <element attributes="import_attribute_name=Close notes,edge_encryption_enabled=true" label="Close notes" max_length="40" name="u_close_notes" type="string"/>
+        <element attributes="import_attribute_name=Closure Details,edge_encryption_enabled=true" label="Closure Details" max_length="40" name="u_closure_details" type="string"/>
+        <element attributes="import_attribute_name=Comments and Work notes,edge_encryption_enabled=true" label="Comments and Work notes" max_length="40" name="u_comments_and_work_notes" type="string"/>
+        <element attributes="import_attribute_name=Company,edge_encryption_enabled=true" label="Company" max_length="40" name="u_company" type="string"/>
+        <element attributes="import_attribute_name=Complainant Company Other,edge_encryption_enabled=true" label="Complainant Company Other" max_length="40" name="u_complainant_company_other" type="string"/>
+        <element attributes="import_attribute_name=Complainant Email,edge_encryption_enabled=true" label="Complainant Email" max_length="40" name="u_complainant_email" type="string"/>
+        <element attributes="import_attribute_name=Complainant Name,edge_encryption_enabled=true" label="Complainant Name" max_length="40" name="u_complainant_name" type="string"/>
+        <element attributes="import_attribute_name=Complainant Phone,edge_encryption_enabled=true" label="Complainant Phone" max_length="40" name="u_complainant_phone" type="string"/>
+        <element attributes="import_attribute_name=Complaint Level Indicator,edge_encryption_enabled=true" label="Complaint Level Indicator" max_length="40" name="u_complaint_level_indicator" type="string"/>
+        <element attributes="import_attribute_name=Compliance Notes,edge_encryption_enabled=true" label="Compliance Notes" max_length="40" name="u_compliance_notes" type="string"/>
+        <element attributes="import_attribute_name=Concerns Investigation Summary:,edge_encryption_enabled=true" label="Concerns Investigation Summary:" max_length="40" name="u_concerns_inv_ation_summary_" type="string"/>
+        <element attributes="import_attribute_name=Concern Type,edge_encryption_enabled=true" label="Concern Type" max_length="40" name="u_concern_type" type="string"/>
+        <element attributes="import_attribute_name=Concern Type (AE),edge_encryption_enabled=true" label="Concern Type (AE)" max_length="40" name="u_concern_type__ae_" type="string"/>
+        <element attributes="import_attribute_name=Concern Type - Other,edge_encryption_enabled=true" label="Concern Type - Other" max_length="40" name="u_concern_type___other" type="string"/>
+        <element attributes="import_attribute_name=Configuration item,edge_encryption_enabled=true" label="Configuration item" max_length="40" name="u_configuration_item" type="string"/>
+        <element attributes="import_attribute_name=Contact type,edge_encryption_enabled=true" label="Contact type" max_length="40" name="u_contact_type" type="string"/>
+        <element attributes="import_attribute_name=Correlation display,edge_encryption_enabled=true" label="Correlation display" max_length="40" name="u_correlation_display" type="string"/>
+        <element attributes="import_attribute_name=Correlation ID,edge_encryption_enabled=true" label="Correlation ID" max_length="40" name="u_correlation_id" type="string"/>
+        <element attributes="import_attribute_name=Country of Incident,edge_encryption_enabled=true" label="Country of Incident" max_length="40" name="u_country_of_incident" type="string"/>
+        <element attributes="import_attribute_name=Date Closure Activities Finalized,edge_encryption_enabled=true" label="Date Closure Activities Finalized" max_length="40" name="u_date_closure_ties_finalized" type="string"/>
+        <element attributes="import_attribute_name=Date Investigation Concluded,edge_encryption_enabled=true" label="Date Investigation Concluded" max_length="40" name="u_date_investigation_concluded" type="string"/>
+        <element attributes="import_attribute_name=Delivery plan,edge_encryption_enabled=true" label="Delivery plan" max_length="40" name="u_delivery_plan" type="string"/>
+        <element attributes="import_attribute_name=Delivery task,edge_encryption_enabled=true" label="Delivery task" max_length="40" name="u_delivery_task" type="string"/>
+        <element attributes="import_attribute_name=Description,edge_encryption_enabled=true" label="Description" max_length="40" name="u_description" type="string"/>
+        <element attributes="import_attribute_name=Description of Concern:,edge_encryption_enabled=true" label="Description of Concern:" max_length="4500" name="u_description_of_concern_" type="string"/>
+        <element attributes="import_attribute_name=Disposition,edge_encryption_enabled=true" label="Disposition" max_length="40" name="u_disposition" type="string"/>
+        <element attributes="import_attribute_name=Due date,edge_encryption_enabled=true" label="Due date" max_length="40" name="u_due_date" type="string"/>
+        <element attributes="import_attribute_name=Expected start,edge_encryption_enabled=true" label="Expected start" max_length="40" name="u_expected_start" type="string"/>
+        <element attributes="import_attribute_name=Findings Section,edge_encryption_enabled=true" label="Findings Section" max_length="40" name="u_findings_section" type="string"/>
+        <element attributes="import_attribute_name=Follow up,edge_encryption_enabled=true" label="Follow up" max_length="40" name="u_follow_up" type="string"/>
+        <element attributes="import_attribute_name=Function,edge_encryption_enabled=true" label="Function" max_length="40" name="u_function" type="string"/>
+        <element attributes="import_attribute_name=Impact,edge_encryption_enabled=true" label="Impact" max_length="40" name="u_impact" type="string"/>
+        <element attributes="import_attribute_name=Incident date,edge_encryption_enabled=true" label="Incident date" max_length="40" name="u_incident_date" type="string"/>
+        <element attributes="import_attribute_name=Incident details,edge_encryption_enabled=true" label="Incident details" max_length="40" name="u_incident_details" type="string"/>
+        <element attributes="import_attribute_name=Incident Location,edge_encryption_enabled=true" label="Incident Location" max_length="61" name="u_incident_location" type="string"/>
+        <element attributes="import_attribute_name=individual complained to,edge_encryption_enabled=true" label="individual complained to" max_length="40" name="u_individual_complained_to" type="string"/>
+        <element attributes="import_attribute_name=Individual Completing Form,edge_encryption_enabled=true" label="Individual Completing Form" max_length="40" name="u_individual_completing_form" type="string"/>
+        <element attributes="import_attribute_name=individual hire date,edge_encryption_enabled=true" label="individual hire date" max_length="40" name="u_individual_hire_date" type="string"/>
+        <element attributes="import_attribute_name=individual home office,edge_encryption_enabled=true" label="individual home office" max_length="40" name="u_individual_home_office" type="string"/>
+        <element attributes="import_attribute_name=Individual job owner,edge_encryption_enabled=true" label="Individual job owner" max_length="40" name="u_individual_job_owner" type="string"/>
+        <element attributes="import_attribute_name=individual job title,edge_encryption_enabled=true" label="individual job title" max_length="40" name="u_individual_job_title" type="string"/>
+        <element attributes="import_attribute_name=Integrity Case #,edge_encryption_enabled=true" label="Integrity Case #" max_length="40" name="u_integrity_case__" type="string"/>
+        <element attributes="import_attribute_name=Investigator,edge_encryption_enabled=true" label="Investigator" max_length="40" name="u_investigator" type="string"/>
+        <element attributes="import_attribute_name=Investigator Compliance Notes,edge_encryption_enabled=true" label="Investigator Compliance Notes" max_length="40" name="u_investigator_mpliance_notes" type="string"/>
+        <element attributes="import_attribute_name=Knowledge,edge_encryption_enabled=true" label="Knowledge" max_length="40" name="u_knowledge" type="string"/>
+        <element attributes="import_attribute_name=Location,edge_encryption_enabled=true" label="Location" max_length="40" name="u_location" type="string"/>
+        <element attributes="import_attribute_name=Made SLA,edge_encryption_enabled=true" label="Made SLA" max_length="40" name="u_made_sla" type="string"/>
+        <element attributes="import_attribute_name=Mention Reason if concern is ignored,edge_encryption_enabled=true" label="Mention Reason if concern is ignored" max_length="40" name="u_mention_reas_ern_is_ignored" type="string"/>
+        <element attributes="import_attribute_name=Next Committee Review Date,edge_encryption_enabled=true" label="Next Committee Review Date" max_length="40" name="u_next_committee_review_date" type="string"/>
+        <element attributes="import_attribute_name=Opened,edge_encryption_enabled=true" label="Opened" max_length="40" name="u_opened" type="string"/>
+        <element attributes="import_attribute_name=Opened by,edge_encryption_enabled=true" label="Opened by" max_length="40" name="u_opened_by" type="string"/>
+        <element attributes="import_attribute_name=Order,edge_encryption_enabled=true" label="Order" max_length="40" name="u_order" type="string"/>
+        <element attributes="import_attribute_name=Originator Email,edge_encryption_enabled=true" label="Originator Email" max_length="40" name="u_originator_email" type="string"/>
+        <element attributes="import_attribute_name=Outcome,edge_encryption_enabled=true" label="Outcome" max_length="40" name="u_outcome" type="string"/>
+        <element attributes="import_attribute_name=Parent,edge_encryption_enabled=true" label="Parent" max_length="40" name="u_parent" type="string"/>
+        <element attributes="import_attribute_name=Parties Interviewed:,edge_encryption_enabled=true" label="Parties Interviewed:" max_length="40" name="u_parties_interviewed_" type="string"/>
+        <element attributes="import_attribute_name=Policy,edge_encryption_enabled=true" label="Policy" max_length="40" name="u_policy" type="string"/>
+        <element attributes="import_attribute_name=Policy Detail:,edge_encryption_enabled=true" label="Policy Detail:" max_length="40" name="u_policy_detail_" type="string"/>
+        <element attributes="import_attribute_name=Policy Findings,edge_encryption_enabled=true" label="Policy Findings" max_length="40" name="u_policy_findings" type="string"/>
+        <element attributes="import_attribute_name=Priority,edge_encryption_enabled=true" label="Priority" max_length="40" name="u_priority" type="string"/>
+        <element attributes="import_attribute_name=Reassignment count,edge_encryption_enabled=true" label="Reassignment count" max_length="40" name="u_reassignment_count" type="string"/>
+        <element attributes="import_attribute_name=Region/Service Line,edge_encryption_enabled=true" label="Region/Service Line" max_length="40" name="u_region_service_line" type="string"/>
+        <element attributes="import_attribute_name=Related Policy-Other,edge_encryption_enabled=true" label="Related Policy-Other" max_length="40" name="u_related_policy_other" type="string"/>
+        <element attributes="import_attribute_name=Remediation Actions,edge_encryption_enabled=true" label="Remediation Actions" max_length="40" name="u_remediation_actions" type="string"/>
+        <element attributes="import_attribute_name=Remediation Approvals:,edge_encryption_enabled=true" label="Remediation Approvals:" max_length="40" name="u_remediation_approvals_" type="string"/>
+        <element attributes="import_attribute_name=Short description,edge_encryption_enabled=true" label="Short description" max_length="40" name="u_short_description" type="string"/>
+        <element attributes="import_attribute_name=Source,edge_encryption_enabled=true" label="Source" max_length="40" name="u_source" type="string"/>
+        <element attributes="import_attribute_name=State,edge_encryption_enabled=true" label="State" max_length="40" name="u_state" type="string"/>
+        <element attributes="import_attribute_name=Summary of Findings:,edge_encryption_enabled=true" label="Summary of Findings:" max_length="40" name="u_summary_of_findings_" type="string"/>
+        <element attributes="import_attribute_name=Taskassign,edge_encryption_enabled=true" label="Taskassign" max_length="40" name="u_taskassign" type="string"/>
+        <element attributes="import_attribute_name=Upon approval,edge_encryption_enabled=true" label="Upon approval" max_length="40" name="u_upon_approval" type="string"/>
+        <element attributes="import_attribute_name=Upon reject,edge_encryption_enabled=true" label="Upon reject" max_length="40" name="u_upon_reject" type="string"/>
+        <element attributes="import_attribute_name=Urgency,edge_encryption_enabled=true" label="Urgency" max_length="40" name="u_urgency" type="string"/>
+        <element attributes="import_attribute_name=Witnesses Names,edge_encryption_enabled=true" label="Witnesses Names" max_length="40" name="u_witnesses_names" type="string"/>
+        <element attributes="import_attribute_name=# of Days to Resolve Complaint,edge_encryption_enabled=true" label="# of Days to Resolve Complaint" max_length="40" name="u___of_days_to_olve_complaint" type="string"/>
+    </element>
+</database>

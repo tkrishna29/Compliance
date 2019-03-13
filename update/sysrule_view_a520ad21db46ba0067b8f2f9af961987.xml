@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysrule_view">
+    <sysrule_view action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <advanced>false</advanced>
+        <condition table="x_grs_compliance_integrityconcern">concern_raised_through=Annual Integrity Review^complaint_level=I^concern_status=Investigation In Progress^ORconcern_status=Additional Investigation Required^EQ<item endquery="false" field="concern_raised_through" goto="false" newquery="false" operator="=" or="false" value="Annual Integrity Review"/>
+            <item endquery="false" field="complaint_level" goto="false" newquery="false" operator="=" or="false" value="I"/>
+            <item endquery="false" field="concern_status" goto="false" newquery="false" operator="=" or="false" value="Investigation In Progress"/>
+            <item endquery="false" field="concern_status" goto="false" newquery="false" operator="=" or="true" value="Additional Investigation Required"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <description/>
+        <device_type>browser</device_type>
+        <match_conditions>ALL</match_conditions>
+        <name>AIR Under Investigation I</name>
+        <order>100</order>
+        <overrides_user_preference>true</overrides_user_preference>
+        <script><![CDATA[(function overrideView(view, is_list) {
+//gs.addInfoMessage("Krishna:Current Scope Name  " + gs.getCurrentScopeName() );
+/*	
+if (gs.hasRole("x_grs_compliance.director") )
+{	// Add your code here
+	answer = "gil_review"; 
+}
+if (gs.hasRole("x_grs_compliance.investigators") )
+{	// Add your code here
+	answer = "investigator_review";  // set the new view to answer
+}
+if (gs.hasRole("x_grs_compliance.Committee Review"))
+{	// Add your code here
+	answer = "committee_review_alert";  // set the new view to answer
+}
+*/
+})(view, is_list);]]></script>
+        <sys_class_name>sysrule_view</sys_class_name>
+        <sys_created_by>Krishna.Chaitanya</sys_created_by>
+        <sys_created_on>2017-04-10 14:59:14</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>a520ad21db46ba0067b8f2f9af961987</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>AIR Under Investigation I</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Compliance" source="x_grs_compliance">f14d9178dbe3e60067b8f2f9af961914</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Compliance">f14d9178dbe3e60067b8f2f9af961914</sys_scope>
+        <sys_update_name>sysrule_view_a520ad21db46ba0067b8f2f9af961987</sys_update_name>
+        <sys_updated_by>Krishna.Chaitanya</sys_updated_by>
+        <sys_updated_on>2017-04-27 00:24:49</sys_updated_on>
+        <table>x_grs_compliance_integrityconcern</table>
+        <view>under_investigation</view>
+    </sysrule_view>
+</record_update>
